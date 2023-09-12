@@ -13,8 +13,8 @@ export default function Navbar() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects" className="menu_item">
-                        Projects
+                    <NavLink to="/experience" className="menu_item">
+                        Experience
                     </NavLink>
                 </li>
                 <li>
@@ -22,16 +22,19 @@ export default function Navbar() {
                         Skills
                     </NavLink>
                 </li>
+
                 <li>
-                    <NavLink to="/about" className="menu_item">
-                        About me
+                    <NavLink to="/projects" className="menu_item">
+                        Projects
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/experience" className="menu_item">
-                        Experience
+                    <NavLink to="/contact" className="menu_item">
+                        Contact
                     </NavLink>
                 </li>
+
+
             </ul>
         </div>
     );
