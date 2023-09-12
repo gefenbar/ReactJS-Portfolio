@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 // import BasicScene from './Components/BasicScene';
-import SocialBalls from './Components/SocialBalls';
+// import SocialBalls from './Components/SocialBalls';
 import Navbar from './Components/Navbar';
-import BackgroundScene from './Components/BackgroundScene';
+// import BackgroundScene from './Components/BackgroundScene';
 import Hero from './Components/Hero'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <>
       {/* <BackgroundScene /> */}
-      <SocialBalls />
+      {/* <SocialBalls /> */}
       {/* <Model /> */}
       <BrowserRouter>
         <Navbar />
@@ -33,7 +33,6 @@ export default function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-
     </>
   );
 }

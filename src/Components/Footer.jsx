@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber';
 import '../styles/Footer.css'
-export default function AboutMe() {
+export default function Footer() {
     return (
 
         <footer>
