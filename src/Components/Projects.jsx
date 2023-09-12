@@ -1,3 +1,4 @@
+import '../styles/Projects.css'
 import { Canvas } from '@react-three/fiber';
 
 export default function Project() {
@@ -7,7 +8,7 @@ export default function Project() {
             <div className="projects">
                 <button
                     type="button"
-                    onclick='window.location.href="https://github.com/gefenbar/Website-Eye-Robot-full-version"'
+                    onClick={() => window.location.href = "https://github.com/gefenbar/Website-Eye-Robot-full-version"}
                 >
                     Final Year
                     <br />
@@ -17,7 +18,7 @@ export default function Project() {
             <div className="projects">
                 <button
                     type="button"
-                    onclick='window.location.href="https://github.com/gefenbar/Prototype5"'
+                    onClick={() => window.location.href = "https://github.com/gefenbar/Prototype5"}
                 >
                     Unity
                     <br />
@@ -27,15 +28,12 @@ export default function Project() {
                 <br />
                 <button
                     type="button"
-                    onclick='window.location.href="https://github.com/gefenbar/"'
+                    onClick={() => window.location.href = "https://github.com/gefenbar/"}
                 >
                     {" "}
-                    More on my github account..
+                    More on my GitHub account..
                 </button>
-                {/* <a id="more_github_text" href="https://github.com/gefenbar/">And more on my github account..</a> */}
             </div>
         </section>
-
-    )
+    );
 }
-

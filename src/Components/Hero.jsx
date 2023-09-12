@@ -29,7 +29,7 @@ export default function Hero() {
     }, []);
 
     useEffect(() => {
-        const buttonTimer = setTimeout(() => setShowButton(true), 13500);
+        const buttonTimer = setTimeout(() => setShowButton(true), 14500);
 
         return () => {
             clearTimeout(buttonTimer);

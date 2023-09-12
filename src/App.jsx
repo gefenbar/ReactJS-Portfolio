@@ -19,20 +19,23 @@ export default function App() {
 
   return (
     <>
-      {/* <BackgroundScene /> */}
-      {/* <SocialBalls /> */}
-      {/* <Model /> */}
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="app">
+        {/* <BackgroundScene /> */}
+        {/* <SocialBalls /> */}
+        {/* <Model /> */}
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+      </div >
+
       <Footer />
-    </>
+      </>
   );
 }
