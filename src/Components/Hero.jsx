@@ -15,9 +15,9 @@ export default function Hero() {
 
     useEffect(() => {
         const timer1 = setTimeout(() => setShowFirstLine(true), 50);
-        const timer2 = setTimeout(() => setShowSecondLine(true), text_first.length * 120);
-        const timer3 = setTimeout(() => setShowThirdLine(true), (text_first.length + text_second.length) * 135); // Adjust the delay as needed
-        const timer4 = setTimeout(() => setShowFourthLine(true), (text_first.length + text_second.length + text_third.length) * 150); // Adjust the delay as needed
+        const timer2 = setTimeout(() => setShowSecondLine(true), text_first.length * 110);
+        const timer3 = setTimeout(() => setShowThirdLine(true), (text_first.length + text_second.length) * 120); // Adjust the delay as needed
+        const timer4 = setTimeout(() => setShowFourthLine(true), (text_first.length + text_second.length + text_third.length) * 122); // Adjust the delay as needed
 
         return () => {
             clearTimeout(timer1);
@@ -35,7 +35,7 @@ export default function Hero() {
                         <Typewriter
                             words={[text_first]}
                             loop={1}
-                            cursor={true}
+                            cursor={false}
                             typeSpeed={50}
 
                         />
@@ -46,7 +46,7 @@ export default function Hero() {
                         <Typewriter
                             words={[text_second]}
                             loop={1}
-                            cursor={true}
+                            cursor={false}
                             typeSpeed={100}
                         />
                     )}
@@ -56,7 +56,7 @@ export default function Hero() {
                         <Typewriter
                             words={[text_third]}
                             loop={1}
-                            cursor={true}
+                            cursor={false}
                             typeSpeed={100}
                         />
                     )}
