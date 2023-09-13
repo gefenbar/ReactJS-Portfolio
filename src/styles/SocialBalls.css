@@ -1,0 +1,61 @@
+Canvas {
+    height: 300px !important;
+    width: 200px !important;
+    display: flex;
+
+}
+
+.social_balls {
+    /* display: inline; */
+    /* width: 100px !important; */
+    /* overflow: hidden !important; */
+    /* height: 120px; */
+    z-index: 120000 !important;
+    cursor: pointer !important;
+
+}
+
+.social-balls-container {
+    position: fixed;
+    left: -50px;
+    /* Adjust distance from left */
+    bottom: 30%;
+    transform: translateY(50%);
+    /* Center vertically */
+    z-index: 200000;
+    /* Make canvas container a column */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+    /* Changed to align left */
+}
+
+.social-ball {
+    margin-bottom: 10px;
+
+    /* Add margin  balls */
+}
+
+.logos {
+    width: 1200px !important;
+    height: 1200px !important;
+
+}
+
+/* For PCs and Tablets */
+@media (min-width: 768px) {
+    .social-balls-container {
+        display: flex;
+    }
+
+    .social_balls {
+        display: inline;
+    }
+}
+
+/* For Phones */
+@media (max-width: 767px) {
+    .social-balls-container {
+        display: none;
+    }
+}

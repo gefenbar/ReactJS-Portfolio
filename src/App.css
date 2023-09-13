@@ -27,16 +27,6 @@ textarea {
 
 section {
   margin-top: 120px !important;
-}
+  margin-bottom: 120px !important;
 
-.social_balls {
-  width: 500px !important;
-}
-
-.social-balls-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  /* Optional: adjust the z-index as needed */
 }

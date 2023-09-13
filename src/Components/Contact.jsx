@@ -35,7 +35,8 @@ function Contact() {
     return (
         <section id="contact_section" className="hidden">
             <div id="contact">
-                <h1>Contact Us</h1>
+                <h1>Contact Me</h1>
+                <br></br>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Name:</label>
@@ -67,7 +68,10 @@ function Contact() {
                             value={formData.message}
                             onChange={handleInputChange}
                             rows="4"
+                            type="text"
+
                             required
+                        // maxLength="100"
                         ></textarea>
                     </div>
                     <button type="submit">Submit</button>
