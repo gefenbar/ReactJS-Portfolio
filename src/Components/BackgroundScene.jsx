@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stars } from '@react-three/drei';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
 
-const BackgroundScene = () => {
+export default function BackgroundScene() {
     return (
         <div style={{ width: '100%', height: '100%', position: 'absolute', bottom: 0, top: 0, left: 0, zIndex: 1 }}>
             <Canvas style={{ background: 'transparent' }} >
@@ -41,4 +41,3 @@ const ModelComponent = () => {
     return model ? <primitive object={model} /> : null;
 };
 
-export default BackgroundScene;

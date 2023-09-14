@@ -46,7 +46,6 @@ export default function SocialBalls() {
                 <SocialBall position={[0, 2.1, 0.5]} logo="linkedin.png" className="logos" />
                 <SocialBall position={[0, 0, 0.5]} logo="gmail.png" className="logos" />
                 <SocialBall position={[0, -2.1, 0.5]} logo="github.png" className="logos" />
-
             </Canvas>
         </div>
     );

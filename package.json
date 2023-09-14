@@ -16,6 +16,7 @@
     "@react-three/fiber": "^8.14.1",
     "@types/three": "^0.156.0",
     "g": "^2.0.1",
+    "gltf-loader": "^1.0.0",
     "gltfjsx": "^6.2.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

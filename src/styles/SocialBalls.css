@@ -1,4 +1,4 @@
-Canvas {
+.social-balls-container Canvas {
     height: 300px !important;
     width: 200px !important;
     display: flex;
@@ -39,7 +39,6 @@ Canvas {
 .logos {
     width: 1200px !important;
     height: 1200px !important;
-
 }
 
 /* For PCs and Tablets */

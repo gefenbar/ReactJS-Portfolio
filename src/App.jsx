@@ -8,7 +8,7 @@ import Contact from './Components/Contact';
 import Experience from './Components/Experience';
 import Skills from './Components/Skills';
 import Footer from './Components/Footer';
-import BackgroundScene from './Components/BackgroundScene';
+// import BackgroundScene from './Components/BackgroundScene';
 import SocialBalls from './Components/SocialBalls';
 export default function App() {
   return (
