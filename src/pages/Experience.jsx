@@ -59,7 +59,5 @@ export default function AboutMe() {
                 <br />
             </section>
         </motion.div>
-
-
     )
 }
