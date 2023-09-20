@@ -67,3 +67,15 @@ footer {
     font-style: italic;
     opacity: 0.7;
 }
+
+
+
+@media (max-width: 359px) {
+    .col ul {
+        gap: 10px;
+    }
+
+    #copyright {
+        margin-top: 2px;
+    }
+}

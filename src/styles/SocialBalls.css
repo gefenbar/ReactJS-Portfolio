@@ -1,60 +1,48 @@
-.social-balls-container Canvas {
-    height: 300px !important;
-    width: 200px !important;
+/* styles/SocialBalls.css */
+.social-balls-container {
+    position: fixed;
+    left: 9px;
+    bottom: 30%;
+    transform: translateY(50%);
+    z-index: 200000;
     display: flex;
-
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .social_balls {
-    /* display: inline; */
-    /* width: 100px !important; */
-    /* overflow: hidden !important; */
-    /* height: 120px; */
-    z-index: 120000 !important;
-    cursor: pointer !important;
-
-}
-
-.social-balls-container {
-    position: fixed;
-    left: -50px;
-    /* Adjust distance from left */
-    bottom: 30%;
-    transform: translateY(50%);
-    /* Center vertically */
-    z-index: 200000;
-    /* Make canvas container a column */
     /* display: flex; */
-    flex-direction: column;
-    align-items: flex-start;
-    /* Changed to align left */
+    align-items: center;
 }
 
 .social-ball {
     margin-bottom: 10px;
-
-    /* Add margin  balls */
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
 }
 
-.logos {
-    width: 1200px !important;
-    height: 1200px !important;
+.social-ball:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2);
 }
 
-/* For PCs and Tablets */
-@media (min-width: 768px) {
-    .social-balls-container {
-        display: flex;
-    }
-
-    .social_balls {
-        display: inline;
-    }
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
 }
 
-/* For Phones */
-@media (max-width: 767px) {
-    .social-balls-container {
-        display: none;
-    }
+.social-ball:hover .logo {
+    opacity: 0.7;
 }

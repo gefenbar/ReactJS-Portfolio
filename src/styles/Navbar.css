@@ -60,12 +60,21 @@
     #nav ul {
         /* flex-direction: column; */
         align-items: center;
-        font-size: 75%;
+        font-size: 98%;
 
     }
 
     #nav ul li {
         margin: 10px;
         /* margin-left: -70px; */
+    }
+}
+
+@media (max-width: 450px) {
+
+    #nav ul {
+
+        font-size: 85%;
+
     }
 }
