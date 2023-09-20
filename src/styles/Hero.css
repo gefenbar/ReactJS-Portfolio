@@ -5,6 +5,7 @@
     /* Add a background image */
     background-size: cover;
     background-position: center;
+    width: 700px;
 }
 
 #hero {
@@ -116,5 +117,12 @@
         transform: scale(1.05);
         background-color: #ff0f0f;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #hero_section {
+        width: 320px;
     }
 }
