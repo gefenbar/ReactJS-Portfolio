@@ -90,7 +90,7 @@ export default function App() {
                   enable: true,
                   area: 800,
                 },
-                value: 80,
+                value: 81,
               },
               opacity: {
                 value: 0.1,
