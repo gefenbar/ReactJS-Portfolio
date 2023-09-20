@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-
+import '../styles/Skills.css'
 const skillsData = [
     { name: 'HTML', image: 'html.svg' },
     { name: 'CSS', image: 'css.svg' },
