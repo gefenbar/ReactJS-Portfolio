@@ -70,7 +70,7 @@ details[open] summary {
 .keyword-highlight {
     color: #ff4a57 !important;
     font-weight: bold;
-    font-size: 1.15em;
+    font-size: 1.2em;
     color: transparent;
     display: inline-block;
     text-transform: uppercase;
@@ -79,16 +79,17 @@ details[open] summary {
     animation: floatText 4s infinite ease-in-out alternate;
 }
 
+/* 
 .keyword-highlight::before,
 .keyword-highlight::after {
     content: attr(data-content);
     position: absolute;
     top: 0;
     left: 0;
-    color: blue !important;
+    color: #ff4a57;
     z-index: -1;
     animation: shadowFloat 2s infinite ease-in-out alternate;
-}
+} */
 
 @keyframes floatText {
 
