@@ -55,14 +55,18 @@ footer {
     color: #fff;
 }
 
+/* 
+.col ul li {
+    margin: 0;
+    padding: 10px;
+}
+ */
 
 #copyright {
     font-size: 14px;
     font-style: italic;
     opacity: 0.7;
 }
-
-
 
 @media (max-width: 359px) {
     .col ul {
