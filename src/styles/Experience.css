@@ -85,7 +85,7 @@ details[open] summary {
     position: absolute;
     top: 0;
     left: 0;
-    color: #ff4a57;
+    color: blue !important;
     z-index: -1;
     animation: shadowFloat 2s infinite ease-in-out alternate;
 }
