@@ -34,8 +34,8 @@ export default function Hero() {
 
     return (
         <motion.div
-            initial={{ y: '-100%' }}
-            animate={{ y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >
             <section id="hero_section">
