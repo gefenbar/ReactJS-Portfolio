@@ -1,7 +1,14 @@
+/* Remove the blue outline on focus and active state */
+button:focus,
+button:active {
+  outline: none;
+  /* This removes the outline */
+  background-color: inherit;
+  /* Set the background color to inherit to maintain the original button style */
+}
+
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
   min-height: -webkit-fill-available;
 
