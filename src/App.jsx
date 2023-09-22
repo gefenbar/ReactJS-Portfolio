@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-
+import DarkModeButton from './Components/DarkModeBtn';
 export default function App() {
   const particlesInit = useCallback(async engine => {
     console.log(engine);
@@ -107,6 +107,7 @@ export default function App() {
         />
         <BrowserRouter>
           <Navbar />
+
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Hero />} />
@@ -118,6 +119,8 @@ export default function App() {
           </AnimatePresence>
         </BrowserRouter>
       </div>
+      <DarkModeButton />
+
       <SocialBalls />
       <Footer />
     </>

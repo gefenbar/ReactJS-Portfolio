@@ -15,9 +15,9 @@ export default function SocialBalls() {
     return (
         <div className="social-balls-container">
             <div className="social_balls">
-                <SocialBall logo="linkedin.png" />
-                <SocialBall logo="gmail.png" />
-                <SocialBall logo="github.png" />
+                <a href="https://www.linkedin.com/in/gefen-bar/" target='_blank' ><SocialBall logo="linkedin.png" /></a>
+                <a href="mailto:gefenbar23@gmail.com"><SocialBall logo="gmail.png" /></a>
+                <a href="https://github.com/gefenbar" target='_blank' ><SocialBall logo="github.png" /></a>
             </div>
         </div>
     );
