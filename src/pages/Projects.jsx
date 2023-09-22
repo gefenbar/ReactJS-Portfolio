@@ -25,7 +25,7 @@ const projectsData = [
 
 export default function Project() {
     return (
-        <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
+        <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
             <div className="projects">
                 {projectsData.map((project, index) => (
                     <div className="project-card" key={index}>

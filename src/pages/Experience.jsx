@@ -61,7 +61,7 @@ export default function AboutMe() {
 
 
     return (
-        <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
+        <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
             <div id="experience">
                 {experienceData.map((experience, index) => (
                     <div key={index}>
