@@ -9,6 +9,10 @@ const skillsData = [
     { name: 'Python', image: 'python.svg' },
     { name: 'Github', image: 'github.svg' },
     { name: 'C#', image: 'csharp.svg' },
+    { name: 'Selenium', image: 'selenium.png' },
+    { name: 'React', image: 'react.svg' },
+    { name: 'Flask', image: 'flask.svg' },
+
 ];
 
 export default function Skills() {

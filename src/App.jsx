@@ -9,7 +9,7 @@ import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Footer from './Components/Footer';
 import SocialBalls from './Components/SocialBalls';
-import { motion, AnimatePresence} from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
