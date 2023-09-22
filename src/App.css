@@ -27,53 +27,47 @@ textarea {
 }
 
 .dark-mode-button {
+  z-index: 10000000000;
   position: fixed;
-  right: 30px;
-  bottom: 80px;
+  right: 9px;
+  bottom: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* transition: background-color 0.3s ease, transform 0.3s ease; */
   width: 100px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   overflow: hidden;
 }
 
-/* .dark-mode-button img {
+.light-bulb {
+  position: inherit;
+  bottom: 0;
+  right: 0;
   width: 100px;
   height: 100px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-} */
-
-
-.dark-mode-button:hover {
-  transform: scale(1.1);
-}
-
-/* Light bulb animation */
-.light-bulb {
-  position: relative;
-  width: 120px;
-  height: 120px;
   transition: opacity 0.3s ease;
 }
+
 
 .light-bulb img {
   width: 80px;
   height: 80px;
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: 0;
+  top: 0; */
 }
 
 .lit {
   opacity: 1;
+
 }
 
 .unlit {
-  opacity: 0.2;
+  opacity: 1;
+  filter: invert(0.3);
+  /* filter: hue-rotate(122deg); */
 }

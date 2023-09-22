@@ -13,7 +13,7 @@ const skillsData = [
 
 export default function Skills() {
     return (
-        <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
+        <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
             <div className="wrap-circles">
                 {skillsData.map((skill, index) => (
                     <div className="container-circle" key={index}>

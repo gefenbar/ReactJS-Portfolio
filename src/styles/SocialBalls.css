@@ -1,8 +1,7 @@
-/* styles/SocialBalls.css */
 .social-balls-container {
     position: fixed;
     left: 9px;
-    bottom: 30%;
+    bottom: 100px;
     transform: translateY(50%);
     z-index: 200000;
     display: flex;
@@ -11,7 +10,6 @@
 }
 
 .social_balls {
-    /* display: flex; */
     align-items: center;
 }
 
