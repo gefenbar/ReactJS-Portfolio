@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Contact.css';
 import { motion } from 'framer-motion';
 
-function Contact() {
+export default function Contact() {
     const initialFormData = {
         name: '',
         email: '',
@@ -74,4 +74,3 @@ function Contact() {
     );
 }
 
-export default Contact;

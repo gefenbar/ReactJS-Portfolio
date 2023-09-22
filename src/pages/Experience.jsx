@@ -4,32 +4,62 @@ import { motion } from 'framer-motion';
 const experienceData = [
     {
         title: 'Intern | Art Division',
-        date: 'Oct 2021 - Feb 2022',
-        description: `Website building and maintenance internship in a UK based company. I
-                  have designed and built websites and was in charge of their
-                  maintenance: Worked to resolve sites’ Back-end and Front-end bugs
-                  using WP, CSS, JS Have been working with customers to resolve the
-                  issues they were facing and assisting them with implementation.`,
+        date: '2021 - 2022 / London (Remote)',
+        description: [
+            'Developed and maintained company websites using HTML, CSS, JavaScript, and basic PHP.',
+            'Fixed technical bugs and issues on client websites to improve site functionality.',
+            'Addressed client requests and feedback to meet their website needs and preferences.',
+            'Implemented website improvements including UI updates, speed optimizations, and basic SEO practices.',
+            'Worked collaboratively with team members to complete web development projects.',
+        ],
     },
     {
         title: 'IT Specialist | Sapir College IT',
-        date: 'Nov 2018 - May 2021',
-        description: `2.5 years of technical support to teachers students and executive
-                  staff. Implemented and trained customers with third party exam
-                  management system: Gave technical installation training and support
-                  Conducted class lectures to teachers Gave personal face to face
-                  guidance and remote support`,
+        date: '2018 - 2021',
+        description: [
+            'Provided technical support to college staff and students.',
+            'Assisted with installation and training on a new exam software system.',
+            'Conducted group training and one-on-one support to aid adoption of the new system.',
+            'Delivered personalized guidance to help troubleshoot issues and answer questions.',
+            'Ensured teachers and staff were able to use the system proficiently.',
+        ],
     },
     {
         title: 'Site building & maintenance | Sapir College IPO',
-        date: 'Jul 2019 - Sep 2020',
-        description: `Worldwide site management, performance and usability enhancement:
-                  Designed and managed sites worldwide Designed and maintained usability
-                  of sites. Assigned as UX specialist for multiple websites.`,
+        date: '2019 - 2020',
+        description: [
+            'Maintained and updated worldwide websites using HTML, CSS, and JavaScript.',
+            'Implemented website improvements to enhance user experience and site performance.',
+        ],
     },
 ];
 
+// Define an array of keywords relevant to your industry
+const industryKeywords = [
+    'HTML', 'CSS', 'JavaScript', 'PHP', 'UI', 'Speed Optimization', 'SEO',
+    'Technical Support', 'Installation', 'Training', 'Software System', 'Troubleshooting'
+];
+
 export default function AboutMe() {
+    // Function to wrap keywords in a <span> with a specific class
+    // Function to wrap keywords in a <span> with a specific class
+    function highlightKeywords(text) {
+        const words = text.split(' ');
+        const highlightedWords = words.map((word, wordIndex) => {
+            if (industryKeywords.includes(word.replace(/[.,!?]/g, ''))) {
+                return <span key={wordIndex} className="keyword-highlight">{word} </span>;
+            }
+            return word + ' ';
+        });
+
+        return (
+            <span className="highlighted-text">
+                {highlightedWords}
+            </span>
+        );
+    }
+
+
     return (
         <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
             <section id="experience_section" className="hidden">
@@ -42,12 +72,14 @@ export default function AboutMe() {
                             <details>
                                 <summary></summary>
                                 <h3>{experience.date}</h3>
-                                <p>{experience.description}</p>
+                                <ul>
+                                    {experience.description.map((item, itemIndex) => (
+                                        <li key={itemIndex}>{highlightKeywords(item)}</li>
+                                    ))}
+                                </ul>
                             </details>
                         </div>
-
                     ))}
-
                 </div>
                 <br />
                 <br />
