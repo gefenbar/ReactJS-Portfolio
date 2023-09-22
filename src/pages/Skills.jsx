@@ -14,19 +14,16 @@ const skillsData = [
 export default function Skills() {
     return (
         <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <section id="skills_section" className="hidden">
-                <h1>Skills</h1>
-                <div className="wrap-circles">
-                    {skillsData.map((skill, index) => (
-                        <div className="container-circle" key={index}>
-                            {skill.name}
-                            <div className="circle">
-                                <img src={`images/SVG/${skill.image}`} alt={skill.name} width={100} height={150} />
-                            </div>
+            <div className="wrap-circles">
+                {skillsData.map((skill, index) => (
+                    <div className="container-circle" key={index}>
+                        {skill.name}
+                        <div className="circle">
+                            <img src={`images/SVG/${skill.image}`} alt={skill.name} width={100} height={150} />
                         </div>
-                    ))}
-                </div>
-            </section>
+                    </div>
+                ))}
+            </div>
         </motion.div>
     );
 }

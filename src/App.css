@@ -3,6 +3,8 @@
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+  min-height: -webkit-fill-available;
+
 }
 
 
@@ -24,9 +26,54 @@ textarea {
   padding: 0;
 }
 
+.dark-mode-button {
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* .dark-mode-button img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+} */
 
 
-section {
-  margin-top: 120px !important;
-  margin-bottom: 120px !important;
+.dark-mode-button:hover {
+  transform: scale(1.1);
+}
+
+/* Light bulb animation */
+.light-bulb {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  transition: opacity 0.3s ease;
+}
+
+.light-bulb img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.lit {
+  opacity: 1;
+}
+
+.unlit {
+  opacity: 0.2;
 }

@@ -62,28 +62,24 @@ export default function AboutMe() {
 
     return (
         <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <section id="experience_section" className="hidden">
-                <div id="experience">
-                    <h1>My Experience</h1>
-                    <br />
-                    {experienceData.map((experience, index) => (
-                        <div key={index}>
-                            <h2>{experience.title}</h2>
-                            <details>
-                                <summary></summary>
-                                <h3>{experience.date}</h3>
-                                <ul>
-                                    {experience.description.map((item, itemIndex) => (
-                                        <li key={itemIndex}>{highlightKeywords(item)}</li>
-                                    ))}
-                                </ul>
-                            </details>
-                        </div>
-                    ))}
-                </div>
-                <br />
-                <br />
-            </section>
+            <div id="experience">
+                {experienceData.map((experience, index) => (
+                    <div key={index}>
+                        <h2>{experience.title}</h2>
+                        <details>
+                            <summary></summary>
+                            <h3>{experience.date}</h3>
+                            <ul>
+                                {experience.description.map((item, itemIndex) => (
+                                    <li key={itemIndex}>{highlightKeywords(item)}</li>
+                                ))}
+                            </ul>
+                        </details>
+                    </div>
+                ))}
+            </div>
+            <br />
+            <br />
         </motion.div>
     );
 }
