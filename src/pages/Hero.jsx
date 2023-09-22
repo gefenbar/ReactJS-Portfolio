@@ -35,9 +35,14 @@ export default function Hero() {
     return (
         <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            animate={{ opacity: 3 }}
+            transition={{
+                duration: 1,
+                easing: [0.42, 0, 0.58, 1],
+                delay: 0.5,
+            }}
         >
+
             <section id="hero_section">
                 <div id="hero">
                     <h1 id="h1_on_hero">
