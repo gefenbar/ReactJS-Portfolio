@@ -48,23 +48,6 @@ form button[type="submit"]:hover {
     background-color: #a91b25;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-
-    /* Adjust styles for responsive Contact component */
-    #contact {
-        width: 320px;
-    }
-}
-
-@media (max-width: 430px) {
-
-    /* Adjust styles for responsive Contact component */
-    #contact {
-        width: 290px;
-    }
-}
-
 /* Your existing Contact component styles */
 #contact {
     width: 700px;
@@ -90,4 +73,23 @@ form button[type="submit"]:hover {
 
 #contact:hover {
     background-color: white !important;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    /* Adjust styles for responsive Contact component */
+    #contact {
+        width: 320px;
+    }
+
+}
+
+@media (max-width:430px) {
+
+    /* Adjust styles for responsive Contact component */
+    #contact {
+        width: 290px;
+    }
 }
