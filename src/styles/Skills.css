@@ -1,23 +1,9 @@
-/* Styles for the skills section */
-#skills_section {
-    text-align: center;
-    padding: 2rem 0;
-}
-
-#skills_section h1 {
-    font-size: 4rem;
-    margin-bottom: 4rem;
-    color: #0099ff;
-    /* Change the color to match your theme */
-    animation: fadeInUp 1s ease;
-}
-
-/* Styles for the skill cards */
 .wrap-circles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 800px;
+
 }
 
 .container-circle {
@@ -28,7 +14,7 @@
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 0.5s ease;
     filter: drop-shadow(2px 4px 6px black);
 
@@ -37,7 +23,7 @@
 .container-circle:hover {
     transform: translateY(-10px);
     /* filter: invert(0.1) */
-    color: red;
+    color: #ff4a57;
 }
 
 .container-circle img {
