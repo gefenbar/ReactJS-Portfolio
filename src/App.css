@@ -1,4 +1,3 @@
-/* Remove the blue outline on focus and active state */
 button:focus,
 button:active {
   outline: none;
