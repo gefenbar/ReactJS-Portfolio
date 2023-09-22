@@ -1,6 +1,7 @@
 #experience {
     text-align: center;
     perspective: 5000px;
+    /* Adjust as needed for desired 3D effect */
 }
 
 #experience div {
@@ -16,6 +17,14 @@
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     transform-style: preserve-3d;
     transform: translateZ(0);
+    /* Create a stacking context for child elements */
+}
+
+#experience h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    /* padding-top: 10px; */
 }
 
 #experience h2 {
@@ -44,6 +53,20 @@ details[open] summary {
     font-weight: bold;
 }
 
+#experience p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#experience div:hover {
+    background-color: white;
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%); */
+    transform: translateY(-5px) rotateX(10deg);
+    /* Adjust as needed */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
 .keyword-highlight {
     color: #ff4a57 !important;
     font-weight: bold;
@@ -55,6 +78,18 @@ details[open] summary {
     position: relative;
     animation: floatText 4s infinite ease-in-out alternate;
 }
+
+/* 
+.keyword-highlight::before,
+.keyword-highlight::after {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff4a57;
+    z-index: -1;
+    animation: shadowFloat 2s infinite ease-in-out alternate;
+} */
 
 @keyframes floatText {
 
@@ -79,6 +114,8 @@ details[open] summary {
         text-shadow: 0 6px 4px rgba(255, 74, 87, 0.6);
     }
 }
+
+
 
 @media (max-width: 768px) {
     #experience div {

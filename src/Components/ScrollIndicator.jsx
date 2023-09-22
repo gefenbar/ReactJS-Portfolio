@@ -1,12 +1,36 @@
-import { motion, AnimatePresence, useScroll } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-export const CircleIndicator = () => {
-    const { scrollYProgress } = useScroll()
+const ScrollingRunningIndicator = () => {
+    const [scrollYProgress, setScrollYProgress] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const scrollYProgress = scrollY / document.body.scrollHeight;
+            setScrollYProgress(scrollYProgress);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <motion.path
-            d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-            style={{ pathLength: scrollYProgress }}
+        <motion.div
+            style={{
+                width: "100%",
+                height: "4px",
+                backgroundColor: "black",
+                position: "fixed",
+                bottom: "0px",
+                left: "0px",
+                transform: `scaleX(${scrollYProgress})`,
+            }}
         />
-    )
-}
+    );
+};
+
+export default ScrollingRunningIndicator;
