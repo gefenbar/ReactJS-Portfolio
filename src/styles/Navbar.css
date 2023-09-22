@@ -84,9 +84,13 @@
 
     #nav ul li a.menu_item {
 
-        font-size: 90%;
+        font-size: 98%;
 
     }
 
+    #nav ul li {
+        margin: 5px;
+        /* margin-left: -70px; */
+    }
 
 }
