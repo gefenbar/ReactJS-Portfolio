@@ -29,101 +29,97 @@ export default function App() {
     await console.log(container);
   }, []);
   return (
-    <>
-      <div className="app">
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={{
-            background: {
-              color: {
-                value: "#ff4a57",
-              },
+    <div className="app">
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          background: {
+            color: {
+              value: "#000",
             },
+          },
 
-            fpsLimit: 120,
-            interactivity: {
-              events: {
-                onClick: {
-                  enable: true,
-                  mode: "push",
-                },
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: true,
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
               },
-              modes: {
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 5.4,
-                },
+              onHover: {
+                enable: true,
+                mode: "repulse",
               },
+              resize: true,
             },
-            particles: {
-              color: {
-                value: "#fff",
+            modes: {
+              push: {
+                quantity: 4,
               },
-              links: {
-                color: "#fff",
+              repulse: {
                 distance: 200,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
-              },
-              move: {
-                direction: "none",
-                enable: true,
-                outModes: {
-                  default: "bounce",
-                },
-                random: false,
-                speed: 0.15,
-                straight: false,
-              },
-              number: {
-                density: {
-                  enable: true,
-                  area: 800,
-                },
-                value: 81,
-              },
-              opacity: {
-                value: 0.1,
-              },
-              shape: {
-                type: "circle",
-              },
-              size: {
-                value: { min: 1, max: 5 },
+                duration: 5.4,
               },
             },
-            detectRetina: true,
-          }}
-        />
-        <BrowserRouter>
-          <Navbar />
-
-          <AnimatePresence mode="wait">
-            <Routes>
-              <Route path="/" element={<Hero />} />
-              <Route path="/experience" element={<Experience />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </AnimatePresence>
-        </BrowserRouter>
-      </div>
-      <DarkModeButton />
-
-      <SocialBalls />
-      <Footer />
-    </>
+          },
+          particles: {
+            color: {
+              value: "#fff",
+            },
+            links: {
+              color: "#fff",
+              distance: 200,
+              enable: true,
+              opacity: 0.5,
+              width: 1,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outModes: {
+                default: "bounce",
+              },
+              random: false,
+              speed: 0.15,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 81,
+            },
+            opacity: {
+              value: 0.1,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: { min: 1, max: 5 },
+            },
+          },
+          detectRetina: true,
+        }}
+      />
+      <BrowserRouter>
+        <Navbar />
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </AnimatePresence>
+        <DarkModeButton />
+        <SocialBalls />
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }

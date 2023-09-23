@@ -6,8 +6,8 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: white;
     color: black;
-    /* font-family: 'Courier New', Courier, monospace; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,10 +15,6 @@ footer {
     z-index: 1000;
     font-weight: 900;
     font-size: larger;
-    filter: drop-shadow(0.5px 0.5px 0px black);
-    background-color: #ff4a57;
-    border-top: 1px solid black;
-
 }
 
 /* .footer {
@@ -33,11 +29,6 @@ body::before {
     height: 100px;
     display: block;
 }
-
-/* 
-body.footer-visible footer {
-    transform: translateY(0);
-} */
 
 @media (max-width: 768px) {
     #copyright {
