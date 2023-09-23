@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import '../styles/Skills.css'
+
 const skillsData = [
     { name: 'HTML', image: 'html.svg' },
     { name: 'CSS', image: 'css.svg' },
@@ -12,13 +13,12 @@ const skillsData = [
     { name: 'Selenium', image: 'selenium.png' },
     { name: 'React', image: 'react.svg' },
     { name: 'Flask', image: 'flask.svg' },
-
 ];
 
 export default function Skills() {
     return (
         <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <div id="wrap-circles"  className='section'>
+            <div id="wrap-circles" className='section'>
                 {skillsData.map((skill, index) => (
                     <div className="container-circle" key={index}>
                         {skill.name}

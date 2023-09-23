@@ -41,8 +41,6 @@ const industryKeywords = [
 ];
 
 export default function AboutMe() {
-    // Function to wrap keywords in a <span> with a specific class
-    // Function to wrap keywords in a <span> with a specific class
     function highlightKeywords(text) {
         const words = text.split(' ');
         const highlightedWords = words.map((word, wordIndex) => {
@@ -58,7 +56,6 @@ export default function AboutMe() {
             </span>
         );
     }
-
 
     return (
         <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
