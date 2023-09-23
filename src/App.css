@@ -75,25 +75,23 @@ textarea {
 .unlit {
   opacity: 1;
   filter: invert(0.3);
-  /* filter: hue-rotate(122deg); */
 }
 
 .light-bulb img:hover {
   transform: scale(1.05);
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
-  /* filter: brightness(1.2); */
 }
 
 @media (max-width: 768px) {
 
   .light-bulb img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
   .light-bulb {
-    width: 50px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+    bottom: 50px
   }
 
 
@@ -107,7 +105,12 @@ textarea {
 
 @media (max-width: 480px) {
   .light-bulb {
-    bottom: 60px;
-    /* margin-bottom: 30px; */
+    width: 50px;
+    height: 50px;
+  }
+
+  .light-bulb img {
+    width: 50px;
+    height: 50px;
   }
 }

@@ -44,7 +44,7 @@ details ul li {
 }
 
 details[open] summary {
-    color: #ff4a57;
+    color: #068FFF;
 }
 
 #experience p {
@@ -58,7 +58,7 @@ details[open] summary {
 } */
 
 .keyword-highlight {
-    background-color: #ff4a57;
+    background-color: #068FFF;
     color: white !important;
     font-weight: bold;
 

@@ -48,17 +48,15 @@
 
 @media (max-width: 768px) {
     .social-ball {
-
         width: 40px;
         height: 40px;
-        bottom: -15px;
-
+        bottom: -25px;
     }
 }
 
 @media (max-width: 480px) {
     .social-balls-container {
-        bottom: 160px;
+        bottom: 140px;
     }
 
 }
