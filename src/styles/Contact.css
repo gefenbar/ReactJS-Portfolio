@@ -46,7 +46,7 @@ form button[type="submit"] {
     display: inline-block;
     width: 200px;
     padding: 10px;
-    background-color: #ff4a57;
+    background-color: #068FFF;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -57,7 +57,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #a91b25;
+    background-color: #4E4FEB;
 }
 
 #contact {

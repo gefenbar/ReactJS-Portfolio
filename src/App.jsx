@@ -66,10 +66,10 @@ export default function App() {
           },
           particles: {
             color: {
-              value: "#fff",
+              value: "#068FFF",
             },
             links: {
-              color: "#fff",
+              color: "#068FFF",
               distance: 200,
               enable: true,
               opacity: 0.5,

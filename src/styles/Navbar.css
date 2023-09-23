@@ -7,14 +7,14 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #ff4a57;
+    background-color: #068FFF;
 
 }
 
 #nav img#logo {
-    width: 80px;
-    height: auto;
-    filter: invert(100%);
+    width: 60px;
+    height: 60px;
+
 }
 
 #nav ul {
@@ -68,7 +68,7 @@
     }
 
     #nav ul li a.menu_item {
-        font-size: 20px;
+        font-size: 21.5px;
     }
 }
 
