@@ -13,6 +13,12 @@ button:active {
 
 }
 
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* min-height: 100vh !important; */
+}
 
 /* html{
   display: ;
@@ -40,18 +46,14 @@ textarea {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  /* transition: background-color 0.3s ease, transform 0.3s ease; */
   width: 100px;
   height: 100px;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   overflow: hidden;
 }
 
 .light-bulb {
   position: inherit;
-  bottom: 0;
+  bottom: 40px;
   right: 0;
   width: 100px;
   height: 100px;
@@ -62,9 +64,7 @@ textarea {
 .light-bulb img {
   width: 80px;
   height: 80px;
-  /* position: absolute;
-  right: 0;
-  top: 0; */
+
 }
 
 .lit {
@@ -78,8 +78,13 @@ textarea {
   /* filter: hue-rotate(122deg); */
 }
 
-@media (max-width: 768px) {
+.light-bulb img:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  /* filter: brightness(1.2); */
+}
 
+@media (max-width: 768px) {
 
   .light-bulb img {
     width: 50px;
@@ -87,16 +92,22 @@ textarea {
   }
 
   .light-bulb {
-
     width: 50px;
     height: 70px;
-    margin-bottom: 10px;
-
   }
+
+
 
   .dark-mode-button {
     width: 50px;
     height: 70px;
 
+  }
+}
+
+@media (max-width: 480px) {
+  .light-bulb {
+    bottom: 60px;
+    /* margin-bottom: 30px; */
   }
 }

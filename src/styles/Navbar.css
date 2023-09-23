@@ -7,8 +7,9 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: white;
-    filter: drop-shadow(1px 0px 1px black);
+    background-color: #ff4a57;
+    filter: drop-shadow(0.5px 0.5px 0px black);
+    border-bottom: 1px solid black;
 
 }
 
@@ -25,24 +26,26 @@
 
 #nav ul li {
     margin: 0 20px;
-
 }
 
 #nav ul li a.menu_item {
     text-decoration: none;
-    font-size: 20px;
-    color: #333;
+    font-size: 25px;
+    color: black;
     transition: all 0.2s ease-in-out;
     font-weight: 900;
 
 }
 
 #nav ul li a.menu_item:hover {
-    color: #ff4a57;
+    color: white;
+    filter: drop-shadow(2px 2px 1px black);
 }
 
 #nav ul li a.menu_item.active {
-    color: #ff4a57 !important;
+    color: white;
+    filter: drop-shadow(2px 2px 1px black);
+
     /* Change the color when clicked */
 }
 

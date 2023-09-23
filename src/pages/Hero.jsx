@@ -38,7 +38,7 @@ export default function Hero() {
             animate={{ y: 0 }}
             transition={{ duration: 1 }}
         >
-            <div id="hero">
+            <div id="hero" className='section'>
                 <h1 id="h1_on_hero">
                     {showFirstLine && (
                         <Typewriter words={[text_first]} loop={1} cursor={false} typeSpeed={50} />
