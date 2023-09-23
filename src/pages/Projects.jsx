@@ -26,7 +26,7 @@ const projectsData = [
 export default function Project() {
     return (
         <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <div className="projects">
+            <div id="projects"  className='section'>
                 {projectsData.map((project, index) => (
                     <div className="project-card" key={index}>
                         <a href={project.url} target="_blank" rel="noopener noreferrer">

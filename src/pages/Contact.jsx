@@ -27,7 +27,7 @@ export default function Contact() {
 
     return (
         <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <div id="contact">
+            <div id="contact" className='section'>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Name:</label>

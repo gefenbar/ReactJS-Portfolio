@@ -1,24 +1,20 @@
 #experience {
     text-align: center;
-    perspective: 3000px;
-
-
 }
 
 #experience div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
-    padding: 4rem 2rem;
+    margin-bottom: 50px;
+    padding: 3rem 2rem;
     max-width: 600px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 12px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 0.5s ease;
-    filter: drop-shadow(2px 4px 6px black);
-
+    filter: drop-shadow(2px 2px 4px black);
 }
 
 #experience h1 {
@@ -50,7 +46,7 @@ details ul li {
 }
 
 details[open] summary {
-    font-weight: bold;
+    color: #ff4a57;
 }
 
 #experience p {
@@ -59,34 +55,20 @@ details[open] summary {
     line-height: 1.5;
 }
 
-#experience div:hover {
-    background-color: white;
-    transform: translateY(-10px);
-}
+/* #experience h2:hover {
+    color: red;
+} */
 
 .keyword-highlight {
     color: #ff4a57 !important;
     font-weight: bold;
-    font-size: 1.2em;
-    color: transparent;
+    font-size: 1.1em;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
     animation: floatText 4s infinite ease-in-out alternate;
 }
-
-/* 
-.keyword-highlight::before,
-.keyword-highlight::after {
-    content: attr(data-content);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ff4a57;
-    z-index: -1;
-    animation: shadowFloat 2s infinite ease-in-out alternate;
-} */
 
 @keyframes floatText {
 
@@ -96,7 +78,7 @@ details[open] summary {
     }
 
     50% {
-        transform: translateY(-3px);
+        transform: translateY(-22px);
     }
 }
 
@@ -112,16 +94,21 @@ details[open] summary {
     }
 }
 
-
-
+/* Added some media queries to make the design more responsive */
 @media (max-width: 768px) {
     #experience div {
-        max-width: 30rem;
+        max-width: 400px;
     }
 }
 
 @media (max-width: 650px) {
     #experience div {
-        max-width: 15rem;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    #experience div {
+        max-width: 250px;
     }
 }

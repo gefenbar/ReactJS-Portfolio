@@ -1,19 +1,21 @@
-.projects {
+#projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transform: translateY(-3%) translateZ(0px);
+
 }
 
 .project-card {
     width: 300px;
-    margin: 1.5rem;
+    margin: 1.3rem;
     overflow: hidden;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 0.5s ease;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(2px 2px 4px black);
 }
 
 .project-card a {
@@ -41,25 +43,26 @@
 .project-card:hover {
     transform: translateY(-10px);
     z-index: 1;
-    background-color: white;
+
 }
 
+/* 
 .project-image {
     position: relative;
     overflow: hidden;
-    filter: drop-shadow(2px 4px 6px black);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+   
 
+} */
+.project-card {
+    width: 250px;
 }
 
 .project-image img {
     width: 100%;
-    height: 400px;
+    height: 250px;
     transition: transform 0.3s ease;
 
 }
-
-
 
 .project-info {
     padding: 1rem;
@@ -71,15 +74,28 @@
     color: #333;
 }
 
+.project-info :hover {
+    color: #ff4a57 !important;
+}
+
 .project-info p {
     font-size: 1rem;
     color: #555;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+
 }
 
 .project-card:hover .project-info p {
     opacity: 1;
     transform: translateY(0);
+
+
 }
+
+/* 
+@media(max-width:768px) {
+    #projects {
+    }
+} */

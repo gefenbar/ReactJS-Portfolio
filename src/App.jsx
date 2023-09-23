@@ -38,7 +38,7 @@ export default function App() {
           options={{
             background: {
               color: {
-                value: "#fff",
+                value: "#ff4a57",
               },
             },
 
@@ -67,10 +67,10 @@ export default function App() {
             },
             particles: {
               color: {
-                value: "#ff4a57",
+                value: "#fff",
               },
               links: {
-                color: "#ff4a57",
+                color: "#fff",
                 distance: 200,
                 enable: true,
                 opacity: 0.5,
@@ -83,7 +83,7 @@ export default function App() {
                   default: "bounce",
                 },
                 random: false,
-                speed: 0.3,
+                speed: 0.15,
                 straight: false,
               },
               number: {
