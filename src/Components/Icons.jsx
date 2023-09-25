@@ -1,29 +1,39 @@
 import React from 'react';
 import '../styles/Icons.css';
 
-const Icon = ({ logo }) => {
+// Update the Icon component to include the text label
+const Icon = ({ logo, title, url }) => {
     return (
         <div className="icon">
-            <img src={logo} alt="Icon" className="logo" />
+            <a href={url} target="_blank" rel="noopener noreferrer">
+                <img src={logo} alt="Icon" className="logo" />
+            </a>
+            <span className="icon-title">{title}</span>
         </div>
     );
 };
 
+
+
 export default function Icons() {
+    const iconsData = [
+        { logo: 'linkedin-logo.png', title: 'LinkedIn', url: 'https://www.linkedin.com/in/gefen-bar/' },
+        { logo: 'gmail-logo.png', title: 'Gmail', url: 'mailto:gefenbar23@gmail.com' },
+        { logo: 'github-logo.png', title: 'GitHub', url: 'https://github.com/gefenbar' },
+        { logo: 'github-logo.png', title: 'GitHub', url: 'https://github.com/gefenbar' },
+        { logo: 'word-logo.png', title: 'Home', url: '/home' },
+        { logo: 'linkedin-logo.png', title: 'Portfolio', url: '/portfolio' },
+        { logo: 'linkedin-logo.png', title: 'Blog', url: '/blog' },
+        { logo: 'linkedin-logo.png', title: 'About', url: '/about' },
+        { logo: 'linkedin-logo.png', title: 'Contact', url: '/contact' },
+    ];
+
     return (
         <div className="icons-container">
             <div className="icons">
-                {/* Social icons */}
-                <a href="https://www.linkedin.com/in/gefen-bar/" target='_blank'><Icon logo="linkedin.png" /></a>
-                <a href="mailto:gefenbar23@gmail.com"><Icon logo="gmail-logo.png" /></a>
-                <a href="https://github.com/gefenbar" target='_blank'><Icon logo="github.png" /></a>
-                <a href="https://github.com/gefenbar" target='_blank'><Icon logo="github.png" /></a>
-                {/* Page icons */}
-                {/* <a href="/home"><Icon logo="home.png" /></a>
-                <a href="/portfolio"><Icon logo="portfolio.png" /></a>
-                <a href="/blog"><Icon logo="blog.png" /></a>
-                <a href="/about"><Icon logo="about.png" /></a>
-                <a href="/contact"><Icon logo="contact.png" /></a> */}
+                {iconsData.map((icon, index) => (
+                    <Icon key={index} logo={icon.logo} title={icon.title} url={icon.url} />
+                ))}
             </div>
         </div>
     );

@@ -2,18 +2,38 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 800px;
-    margin-bottom: 60px;
+    /* max-width: 800px; */
+    /* margin-bottom: 60px; */
 
 }
 
+.skills .file-manager-top-bar {
+    background-color: black;
+    color: red;
+}
+
+.rotate {
+    animation: rotate 25s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .container-circle {
+    position: relative;
+    /* bottom: 100px; */
     font-weight: 700;
     text-align: center;
-    margin: 1.5rem;
-    padding: 1rem;
-    background-color: #46a683;
+    margin: 1rem;
+    padding: 0.1rem;
+    background-color: #f61c0d;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 0.5s ease;

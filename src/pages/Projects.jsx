@@ -1,46 +1,46 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import '../styles/Projects.css';
-
+import PageEffect from '../Components/PageEffect';
 const projectsData = [
     {
         name: 'Final Year Project',
         url: 'https://github.com/gefenbar/Website-Eye-Robot-full-version',
-        image: 'orangeTexture.jpg', // Replace with actual image URL
         description: '',
     },
     {
         name: 'Unity Game',
         url: 'https://github.com/gefenbar/Prototype5',
-        image: 'pinkTexture.jpg', // Replace with actual image URL
         description: '',
     },
     {
         name: 'More on my GitHub account..',
         url: 'https://github.com/gefenbar/',
-        image: 'paperTexture.jpg', // Replace with actual image URL
         description: '',
     },
 ];
 
-export default function Project() {
+export default function Projects() {
     return (
-        <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <div id="projects"  className='section'>
-                {projectsData.map((project, index) => (
-                    <div className="project-card" key={index}>
-                        <a href={project.url} target="_blank" rel="noopener noreferrer">
-                            <div className="project-image">
-                                <img src={project.image} alt={project.name} />
-                            </div>
-                            <div className="project-info">
-                                <h2>{project.name}</h2>
-                                <p>{project.description}</p>
-                            </div>
-                        </a>
-                    </div>
-                ))}
+        <PageEffect>
+            <div className="projects file-manager-container">
+                <div className="file-manager-top-bar">
+                    <img src="folder-logo.png" alt="File Manager Icon" />
+                    <h1>File Manager</h1>
+                </div>
+                <div id="projects" className="section">
+                    {projectsData.map((project, index) => (
+                        <div className="folder-card" key={index}>
+                            <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                <div className="folder-icon">
+                                    <img src="folder-logo.png" alt="Folder Icon" />
+                                </div>
+                                <div className="folder-info">
+                                    <h2>{project.name}</h2>
+                                </div>
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </motion.div>
-    );
+        </PageEffect>);
 }

@@ -4,11 +4,11 @@ import '../styles/Navbar.css';
 import DarkModeBtn from './DarkModeBtn';
 
 const navItems = [
-    { to: '/', label: 'Home', icon: 'sun2.png' },
-    { to: '/experience', label: 'Experience', icon: 'sun2.png' },
-    { to: '/skills', label: 'Skills', icon: 'sun2.png' },
-    { to: '/projects', label: 'Projects', icon: 'sun2.png' },
-    { to: '/contact', label: 'Contact', icon: 'sun2.png' },
+    { to: '/', label: 'Home', icon: 'word-logo.png' },
+    { to: '/experience', label: 'Experience', icon: 'command-line-logo.png' },
+    { to: '/skills', label: 'Skills', icon: 'youtube-logo.png' },
+    { to: '/projects', label: 'Projects', icon: 'folder-logo.png' },
+    { to: '/contact', label: 'Contact', icon: 'gmail-logo.png' },
 ];
 
 export default function Navbar() {

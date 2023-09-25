@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
-import '../styles/Skills.css'
+import React, { useState } from 'react';
+import '../styles/Skills.css';
+import PageEffect from '../Components/PageEffect';
 
 const skillsData = [
     { name: 'HTML', image: 'html.svg' },
@@ -17,17 +18,21 @@ const skillsData = [
 
 export default function Skills() {
     return (
-        <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <div id="wrap-circles" className='section'>
+        <PageEffect>            <div className="skills file-manager-container">
+            <div className="file-manager-top-bar">
+                <img src="youtube-logo.png" alt="Windows Icon" />
+                <h1>Youtube</h1>
+            </div>
+            <div id="wrap-circles" className="section">
                 {skillsData.map((skill, index) => (
                     <div className="container-circle" key={index}>
                         {skill.name}
                         <div className="circle">
-                            <img src={`images/SVG/${skill.image}`} alt={skill.name} width={100} height={150} />
+                            <img src={`/SVG/${skill.image}`} alt={skill.name} width={100} height={150} className="rotate" />
                         </div>
                     </div>
                 ))}
             </div>
-        </motion.div>
-    );
+        </div>
+        </PageEffect>);
 }

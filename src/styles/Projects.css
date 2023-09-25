@@ -1,3 +1,16 @@
+.file-manager-top-bar img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.projects .file-manager-top-bar {
+    background-color: #08afaf;
+}
+
+
+
+
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -5,95 +18,51 @@
     margin-bottom: 60px;
 }
 
-.project-card {
-    width: 300px;
-    margin: 1.3rem;
+.folder-card a {
+    color: black;
+}
+
+.folder-card {
+    width: 200px;
+    /* height: 250px; */
+    /* margin: 1.3rem; */
     overflow: hidden;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 12px;
     transition: transform 0.3s ease;
     animation: fadeIn 1.5s ease;
-}
-
-.project-card a {
-    text-decoration: none;
-    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
     position: relative;
-    display: block;
 }
 
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card:hover::before {
-    opacity: 1;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
+.folder-card:hover {
+    /* transform: translateY(-10px); */
     z-index: 1;
 
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* filter: brightness(1.6); */
+    background-color: #08afaf;
 }
 
-/* 
-.project-image {
-    position: relative;
-    overflow: hidden;
-   
+/* .folder-icon { */
+/* width: 50px; */
+/* height: 50px; */
+/* margin-bottom: 100px; */
+/* } */
 
-} */
-.project-card {
-    width: 250px;
+.folder-icon img {
+    width: 100px;
+    height: 100px;
 }
 
-.project-image img {
-    width: 100%;
-    height: 250px;
-    transition: transform 0.3s ease;
-
-}
-
-.project-info {
-    padding: 1rem;
-}
-
-.project-info h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    /* color: #333; */
+.folder-info h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
     font-weight: 700;
 }
-
-.project-card :hover {
-    color: #068FFF !important;
-}
-
-.project-info p {
-    font-size: 1rem;
-    color: #555;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-
-}
-
-.project-card:hover .project-info p {
-    opacity: 1;
-    transform: translateY(0);
-
-
-}
-
-/* 
-@media(max-width:768px) {
-    #projects {
-    }
-} */

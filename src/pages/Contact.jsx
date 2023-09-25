@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
-import { motion } from 'framer-motion';
-
+import PageEffect from '../Components/PageEffect';
 export default function Contact() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
@@ -18,12 +17,11 @@ export default function Contact() {
     };
 
     return (
-        <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <div id="contact" className='section'>
-                {/* Gmail logo and "New Message" text */}
-                <div className="gmail-logo">
-                    <img src="gmail-logo.png" alt="Gmail Logo" />
-                    <span>New Message</span>
+        <PageEffect>
+            <div className="contact file-manager-container">
+                <div className="file-manager-top-bar">
+                    <img src="gmail-logo.png" alt="Windows Icon" />
+                    <h1>Email</h1>
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -34,7 +32,6 @@ export default function Contact() {
                         <label htmlFor="email">Email:</label>
                         <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
                     </div>
-                    {/* Change the "Message" textarea to a regular input field */}
                     <div className="form-group">
                         <label htmlFor="message">Message:</label>
                         <input type="text" id="message" name="message" value={formData.message} onChange={handleInputChange} required />
@@ -42,6 +39,5 @@ export default function Contact() {
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        </motion.div>
-    );
+        </PageEffect>);
 }

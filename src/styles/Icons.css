@@ -13,40 +13,41 @@
 .icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-gap: 50px;
     align-items: center;
 }
 
 .icon {
     cursor: pointer;
     position: relative;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 10px;
-    overflow: hidden;
+    width: 3rem;
+    height: 3rem;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
 }
 
-/* Simulate the Windows blue rectangle selection effect on hover */
-.icon:hover::before {
+/* Add a marking effect on hover */
+.icon::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #068FFF;
-    /* Windows blue color */
-    border-radius: 10px;
-    opacity: 0.3;
-    /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Change the color as needed */
+    /* border-radius: 10px; */
     transition: opacity 0.3s;
+    opacity: 0;
+    /* Initially transparent */
 }
 
 .icon:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    filter: brightness(1.2);
+    filter: brightness(1.6);
+    background-color: rgba(28, 28, 96, 0.572);
 }
 
 .logo {
@@ -62,6 +63,19 @@
 .icon:hover .logo {
     opacity: 0.7;
 }
+
+.icon-title {
+    color: white;
+    position: relative;
+    bottom: -60px;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+
 
 @media (max-width: 768px) {
     .icon {

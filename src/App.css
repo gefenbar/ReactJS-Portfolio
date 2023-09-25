@@ -49,6 +49,40 @@ textarea {
   padding: 0;
 }
 
+.file-manager-top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ccc;
+  /* Windows file manager top bar color */
+  border-top-left-radius: 5px;
+  /* Rounded top-left corner */
+  border-top-right-radius: 5px;
+  /* Rounded top-right corner */
+}
+
+.file-manager-top-bar h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.file-manager-container {
+  position: relative;
+  margin: 0 auto;
+  width: 750px;
+  height: 600px;
+  bottom: 100px;
+  background-color: #f0f0f0;
+  padding: 0;
+  /* Remove padding to mimic Windows file manager */
+  border: 2px solid #808080;
+  /* Adjust border color */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Add this CSS for the DarkModeBtn */
 .dark-mode-button-container {
   display: flex;

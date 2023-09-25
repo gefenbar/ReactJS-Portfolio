@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Experience.css';
-import { motion } from 'framer-motion';
-
+import PageEffect from '../Components/PageEffect';
 const experienceData = [
     {
         title: 'Intern | Art Division',
@@ -15,6 +14,14 @@ const experienceData = [
         ],
     },
     {
+        title: 'Site building & maintenance | Sapir College IPO',
+        date: '2019 - 2020',
+        description: [
+            'Maintained and updated worldwide websites using HTML, CSS, and JavaScript.',
+            'Implemented website improvements to enhance user experience and site performance.',
+        ],
+    },
+    {
         title: 'IT Specialist | Sapir College IT',
         date: '2018 - 2021',
         description: [
@@ -25,32 +32,7 @@ const experienceData = [
             'Ensured teachers and staff were able to use the system proficiently.',
         ],
     },
-    {
-        title: 'Site building & maintenance | Sapir College IPO',
-        date: '2019 - 2020',
-        description: [
-            'Maintained and updated worldwide websites using HTML, CSS, and JavaScript.',
-            'Implemented website improvements to enhance user experience and site performance.',
-        ],
-    },
 ];
-
-// Define an array of keywords relevant to your industry
-const industryKeywords = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'PHP',
-    'UI',
-    'Speed Optimization',
-    'SEO',
-    'Technical Support',
-    'Installation',
-    'Training',
-    'Software System',
-    'Troubleshooting',
-];
-
 
 export default function Experience() {
     const [openItem, setOpenItem] = useState(null);
@@ -64,19 +46,22 @@ export default function Experience() {
     };
 
     return (
-        <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
+        <PageEffect>        <div className="file-manager-container">
+            <div className="experience file-manager-top-bar">
+                <img src="command-line-logo.png" alt="Windows Icon" />
+                <h1>Command Line</h1>
+            </div>
             <div id="experience" className="command-line-window">
-                <div className="command-line-title">My Proffesional Experience</div>
+                {/* <div className="command-line-title">My Professional Experience</div> */}
                 <div className="command-line-content">
                     {experienceData.map((experience, index) => (
-                        <div key={index} className={`experience-item ${openItem === index ? 'open' : ''}`} onClick={() => toggleItem(index)}>
+                        <div
+                            key={index}
+                            className={`experience-item ${openItem === index ? 'open' : ''}`}
+                            onClick={() => toggleItem(index)}
+                        >
                             <div className="experience-title">
                                 {experience.title}
-                                {openItem === index && (
-                                    <span className="close-button" onClick={(e) => { e.stopPropagation(); toggleItem(index); }}>
-                                        [X]
-                                    </span>
-                                )}
                             </div>
                             <div className="experience-date">{experience.date}</div>
                             <div className="experience-description">
@@ -90,6 +75,6 @@ export default function Experience() {
                     ))}
                 </div>
             </div>
-        </motion.div>
-    );
+        </div>
+        </PageEffect >);
 }
