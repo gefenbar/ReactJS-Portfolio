@@ -8,7 +8,7 @@ const navItems = [
     { to: '/experience', label: 'Experience', icon: 'command-line-logo.png' },
     { to: '/skills', label: 'Skills', icon: 'youtube-logo.png' },
     { to: '/projects', label: 'Projects', icon: 'folder-logo.png' },
-    { to: '/contact', label: 'Contact', icon: 'gmail-logo.png' },
+    { to: '/contact', label: 'Contact', icon: 'mail-logo.png' },
 ];
 
 export default function Navbar() {

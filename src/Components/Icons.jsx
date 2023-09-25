@@ -19,13 +19,10 @@ export default function Icons() {
     const iconsData = [
         { logo: 'linkedin-logo.png', title: 'LinkedIn', url: 'https://www.linkedin.com/in/gefen-bar/' },
         { logo: 'gmail-logo.png', title: 'Gmail', url: 'mailto:gefenbar23@gmail.com' },
+        { logo: 'phone.png', title: 'Phone', url: 'tel:0502001376' },
         { logo: 'github-logo.png', title: 'GitHub', url: 'https://github.com/gefenbar' },
-        { logo: 'github-logo.png', title: 'GitHub', url: 'https://github.com/gefenbar' },
-        { logo: 'word-logo.png', title: 'Home', url: '/home' },
-        { logo: 'linkedin-logo.png', title: 'Portfolio', url: '/portfolio' },
-        { logo: 'linkedin-logo.png', title: 'Blog', url: '/blog' },
-        { logo: 'linkedin-logo.png', title: 'About', url: '/about' },
-        { logo: 'linkedin-logo.png', title: 'Contact', url: '/contact' },
+
+
     ];
 
     return (

@@ -42,7 +42,6 @@
 
 .container-circle:hover {
     transform: translateY(-10px);
-    /* filter: invert(0.1) */
     color: #ebeff2;
 }
 

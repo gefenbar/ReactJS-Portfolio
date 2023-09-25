@@ -18,8 +18,8 @@ const skillsData = [
 
 export default function Skills() {
     return (
-        <PageEffect>            <div className="skills file-manager-container">
-            <div className="file-manager-top-bar">
+        <PageEffect>            <div className="skills page-container">
+            <div className="page-top-bar">
                 <img src="youtube-logo.png" alt="Windows Icon" />
                 <h1>Youtube</h1>
             </div>

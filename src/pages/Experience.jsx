@@ -20,6 +20,12 @@ const experienceData = [
             'Maintained and updated worldwide websites using HTML, CSS, and JavaScript.',
             'Implemented website improvements to enhance user experience and site performance.',
         ],
+    }, {
+        title: 'Bachelor of Science in Computer Science',
+        date: '2019 - 2023',
+        description: [
+            '',
+        ],
     },
     {
         title: 'IT Specialist | Sapir College IT',
@@ -46,8 +52,8 @@ export default function Experience() {
     };
 
     return (
-        <PageEffect>        <div className="file-manager-container">
-            <div className="experience file-manager-top-bar">
+        <PageEffect>        <div className="page-container">
+            <div className="experience page-top-bar">
                 <img src="command-line-logo.png" alt="Windows Icon" />
                 <h1>Command Line</h1>
             </div>

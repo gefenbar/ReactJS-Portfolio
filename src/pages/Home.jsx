@@ -34,8 +34,8 @@ export default function Home() {
 
     return (
         <PageEffect>
-            <div className="file-manager-container">
-                <div className="file-manager-top-bar">
+            <div className="page-container">
+                <div className="page-top-bar">
                     <img src="word-logo.png" alt="Windows Icon" />
                     <h1>Word</h1>
                 </div>

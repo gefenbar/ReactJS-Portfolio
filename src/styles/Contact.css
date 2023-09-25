@@ -16,6 +16,7 @@
 
 
 .form-group {
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -27,8 +28,7 @@
 }
 
 .form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
+.form-group input[type="email"] {
     padding: 10px;
     border: 1px solid #ccc;
     font-size: 16px;
@@ -36,10 +36,20 @@
     border-radius: 8px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 550px;
-    min-width: 400px;
-    min-height: 40px;
-    resize: vertical;
+    width: 300px;
+    height: 18px;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 150px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 form button[type="submit"] {
@@ -60,18 +70,20 @@ form button[type="submit"]:hover {
     background-color: #00569a;
 }
 
-.gmail-logo {
+
+
+/* .gmail-logo {
     display: flex;
     align-items: center;
     font-size: 18px;
     margin-bottom: 50px;
-}
+} */
 
-.gmail-logo img {
+/* .gmail-logo img {
     height: 50px;
     width: 50px;
     margin-right: 10px;
-}
+} */
 
 @media (max-width: 768px) {
     #contact {

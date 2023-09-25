@@ -18,9 +18,9 @@ export default function Contact() {
 
     return (
         <PageEffect>
-            <div className="contact file-manager-container">
-                <div className="file-manager-top-bar">
-                    <img src="gmail-logo.png" alt="Windows Icon" />
+            <div className="contact page-container">
+                <div className="page-top-bar">
+                    <img src="mail-logo.png" alt="Windows Icon" />
                     <h1>Email</h1>
                 </div>
                 <form onSubmit={handleSubmit}>
@@ -34,7 +34,7 @@ export default function Contact() {
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message:</label>
-                        <input type="text" id="message" name="message" value={formData.message} onChange={handleInputChange} required />
+                        <textarea type="text" id="message" name="message" value={formData.message} onChange={handleInputChange} required />
                     </div>
                     <button type="submit">Submit</button>
                 </form>

@@ -39,22 +39,22 @@
 /* Define different styles for each line */
 #h1_on_Word {
     font-size: 30px;
-    color: #FF5733;
+    color: black;
 }
 
 #h2_on_Word {
     font-size: 45px;
-    color: #33FF57;
+    color: #666;
 }
 
 #h3_on_Word {
     font-size: 35px;
-    color: #5733FF;
+    color: #888;
 }
 
 #h4_on_Word {
     font-size: 25px;
-    color: #FF3366;
+    color: #aaa;
 }
 
 #button_on_Word {

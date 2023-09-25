@@ -1,8 +1,8 @@
 /* Icons.css */
 .icons-container {
     position: absolute;
-    left: 5%;
-    bottom: 65%;
+    left: 4%;
+    bottom: 80%;
     transform: translateY(50%);
     z-index: 200000;
     display: flex;
@@ -15,6 +15,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     align-items: center;
+
 }
 
 .icon {
@@ -47,7 +48,7 @@
     /* transform: scale(1.1); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     filter: brightness(1.6);
-    background-color: rgba(28, 28, 96, 0.572);
+    background-color: rgba(28, 28, 106, 0.572);
 }
 
 .logo {
@@ -67,7 +68,7 @@
 .icon-title {
     color: white;
     position: relative;
-    bottom: -60px;
+    bottom: -55px;
     display: flex;
     justify-content: center;
     /* Center horizontally */
@@ -77,9 +78,37 @@
 
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 1250px) {
     .icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .icons {
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-gap: 40px; */
+    }
+
+    .icons-container {
+        position: relative;
+        bottom: 790px;
+        right: unset;
+        left: 32%;
+    }
+
+    .icon-title {
+        font-size: 15px;
+        bottom: -35px;
+    }
+
+    .logo {
+        height: 80%;
+
+        width: 80%;
+
     }
 }
+
+@media (max-width: 768px) {}

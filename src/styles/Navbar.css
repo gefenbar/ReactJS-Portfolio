@@ -32,6 +32,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    /* Add cursor pointer for hover effect */
 }
 
 #nav ul li a.menu_item {
@@ -43,14 +45,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Preserve the size of the tabs */
+    width: 110px;
+    height: 60px;
+    justify-content: space-between;
 }
 
-#nav ul li a.menu_item:hover {
-    color: #3B8EA5;
-}
-
+#nav ul li:hover a.menu_item,
 #nav ul li a.menu_item.active {
-    color: greenyellow;
+    color: black;
+    /* Change color on hover and when active */
+    background-color: #777;
+    /* Add background color on hover and when active */
 }
 
 /* Add styles for the icons */
@@ -68,4 +74,41 @@
     width: 60px;
     height: 60px;
     filter: invert(1);
+}
+
+.light-bulb {
+    position: relative;
+    /* Change to relative positioning */
+    /* width: 100px; */
+    /* height: 100px; */
+    transition: opacity 0.3s ease;
+}
+
+.light-bulb img {
+    width: 45px;
+    height: 45px;
+}
+
+.lit {
+    opacity: 1;
+}
+
+.unlit {
+    opacity: 1;
+    filter: invert(0.3);
+}
+
+.dark-mode-text {
+    font-size: 15px;
+    font-weight: 900;
+    /* Adjust font size as needed */
+    color: #ffffff;
+    text-transform: capitalize;
+    /* Capitalize the text */
+    /* margin-top: 5px; */
+    /* Add top margin for spacing */
+}
+
+.light-bulb img:hover {
+    transform: scale(1.05);
 }
