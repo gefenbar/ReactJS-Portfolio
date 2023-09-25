@@ -21,10 +21,11 @@ const experienceData = [
             'Implemented website improvements to enhance user experience and site performance.',
         ],
     }, {
-        title: 'Bachelor of Science in Computer Science',
+        title: 'Bachelor of Science (B.Sc) - Computer Science',
         date: '2019 - 2023',
         description: [
-            '',
+            'Recently graduated with a Bachelor of Science degree in Computer Science from Sapir College.',
+            ,
         ],
     },
     {
@@ -53,8 +54,8 @@ export default function Experience() {
 
     return (
         <PageEffect>        <div className="page-container">
-            <div className="experience page-top-bar">
-                <img src="command-line-logo.png" alt="Windows Icon" />
+            <div className="page-top-bar">
+                <img src="command-line-logo.png" alt="Command Line logo" />
                 <h1>Command Line</h1>
             </div>
             <div id="experience" className="command-line-window">

@@ -17,18 +17,16 @@ export default function Home() {
     const [showButton, setShowButton] = useState(false);
 
     useEffect(() => {
-        const timer1 = setTimeout(() => setShowFirstLine(true), 300);
-        const timer2 = setTimeout(() => setShowSecondLine(true), text_first.length * 110);
-        const timer3 = setTimeout(() => setShowThirdLine(true), (text_first.length + text_second.length) * 120);
-        const timer4 = setTimeout(() => setShowFourthLine(true), (text_first.length + text_second.length + text_third.length) * 124);
-        const buttonTimer = setTimeout(() => setShowButton(true), 14500);
+        const timer1 = setTimeout(() => setShowFirstLine(true), 500);
+        const timer2 = setTimeout(() => setShowSecondLine(true), text_first.length * 107);
+        const timer3 = setTimeout(() => setShowThirdLine(true), (text_first.length + text_second.length) * 117);
+        const timer4 = setTimeout(() => setShowFourthLine(true), (text_first.length + text_second.length + text_third.length) * 110);
 
         return () => {
             clearTimeout(timer1);
             clearTimeout(timer2);
             clearTimeout(timer3);
             clearTimeout(timer4);
-            clearTimeout(buttonTimer);
         };
     }, []);
 
@@ -58,22 +56,14 @@ export default function Home() {
                                 <Typewriter words={[text_third]} loop={1} cursor={false} typeSpeed={100} />
                             )}
                         </h3>
+                        <br />
                         <h4 id="h4_on_Word">
                             {showFourthLine && (
                                 <Typewriter words={[text_fourth]} loop={1} cursor={false} typeSpeed={100} />
                             )}
                         </h4>
                         <br />
-                        {showButton && (
-                            <a
-                                href="files/Gefen_Bar_Resume.pdf"
-                                id="button_on_Word"
-                                target="_blank"
-                                download="gefen_bar_resume"
-                            >
-                                Download Resume
-                            </a>
-                        )}
+
                     </div>
                 </div>
             </div>

@@ -36,45 +36,31 @@
     width: 90%
 }
 
-/* Define different styles for each line */
 #h1_on_Word {
     font-size: 30px;
-    color: black;
+    color: #003366;
+
 }
 
 #h2_on_Word {
     font-size: 45px;
-    color: #666;
+    color: #004488;
+
 }
 
 #h3_on_Word {
     font-size: 35px;
-    color: #888;
+    color: #0066cc;
+
 }
 
 #h4_on_Word {
     font-size: 25px;
-    color: #aaa;
+    color: #0099cc;
+
 }
 
-#button_on_Word {
-    padding: 15px 30px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: #068FFF;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-}
 
-#button_on_Word:hover {
-    transform: scale(1.05);
-    background-color: #068FFF;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
 
 @media (max-width: 768px) {
     #Word {

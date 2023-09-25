@@ -22,7 +22,7 @@ const projectsData = [
 export default function Projects() {
     return (
         <PageEffect>
-            <div className="projects page-container">
+            <div className="page-container">
                 <div className="page-top-bar">
                     <img src="folder-logo.png" alt="File Manager Icon" />
                     <h1>File Manager</h1>

@@ -1,17 +1,8 @@
-
-
-.projects .file-manager-top-bar {
-    background-color: #08afaf;
-}
-
-
-
-
 #projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-top: 30px;
 }
 
 .folder-card a {
@@ -20,10 +11,7 @@
 
 .folder-card {
     width: 200px;
-    /* height: 250px; */
-    /* margin: 1.3rem; */
     overflow: hidden;
-    /* background-color: #fff; */
     border-radius: 12px;
     transition: transform 0.3s ease;
     animation: fadeIn 1.5s ease;
@@ -36,13 +24,9 @@
 }
 
 .folder-card:hover {
-    /* transform: translateY(-10px); */
     z-index: 1;
-
-    /* transform: scale(1.1); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* filter: brightness(1.6); */
-    background-color: #08afaf;
+    background-color: #c9ce234b;
 }
 
 /* .folder-icon { */

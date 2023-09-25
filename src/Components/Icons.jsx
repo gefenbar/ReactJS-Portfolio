@@ -4,11 +4,17 @@ import '../styles/Icons.css';
 const Icon = ({ logo, title, url, info }) => {
     return (
         <div className="icon">
-            <a href={url} target="_blank" rel="noopener noreferrer">
-                <img src={logo} alt="Icon" className="logo" />
-            </a>
+            {url ? (
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                    <img src={logo} alt="Icon" className="logo" />
+                </a>
+            ) : (
+                <div className="download-button" onClick={() => window.open(url)}>
+                    <img src={logo} alt="Download Icon" className="logo" />
+                </div>
+            )}
             <span className="icon-title">{title}</span>
-            <div className="info-popup">{info}</div>
+            {info && <div className="info-popup">{info}</div>}
         </div>
     );
 };
@@ -31,13 +37,19 @@ export default function Icons() {
             logo: 'phone.png',
             title: 'Phone',
             url: 'tel:0502001376',
-            info: 'Call me at 050-200-1376',
+            info: 'Reach me at 050-200-1376',
         },
         {
             logo: 'github-logo.png',
             title: 'GitHub',
             url: 'https://github.com/gefenbar',
             info: 'Visit my GitHub profile',
+        },
+        {
+            logo: 'pdf-logo.png',
+            title: 'Resume',
+            url: 'files/Gefen_Bar_Resume.pdf',
+            info: 'Take a look at my resume',
         },
     ];
 
