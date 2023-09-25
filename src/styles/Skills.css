@@ -13,7 +13,7 @@
     text-align: center;
     margin: 1.5rem;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #46a683;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 0.5s ease;
@@ -23,7 +23,7 @@
 .container-circle:hover {
     transform: translateY(-10px);
     /* filter: invert(0.1) */
-    color: #068FFF;
+    color: #ebeff2;
 }
 
 .container-circle img {
@@ -33,7 +33,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #068FFF;
+    border: 3px solid #ebeff2;
     /* Change the border color to match your theme */
     transition: transform 0.3s ease;
 }

@@ -6,6 +6,13 @@ button:active {
   /* Set the background color to inherit to maintain the original button style */
 }
 
+/* Show the footer when you scroll to the bottom */
+body::before {
+  content: "";
+  height: 100px;
+  display: block;
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
@@ -38,6 +45,15 @@ textarea {
   padding: 0;
 }
 
+/* Add this CSS for the DarkModeBtn */
+.dark-mode-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  /* Add some right margin for spacing */
+}
+
 .dark-mode-button {
   z-index: 10000000000;
   position: fixed;
@@ -46,30 +62,29 @@ textarea {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
   overflow: hidden;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+
 }
 
 .light-bulb {
-  position: inherit;
-  bottom: 40px;
-  right: 0;
-  width: 100px;
-  height: 100px;
+  position: relative;
+  /* Change to relative positioning */
+  /* width: 100px; */
+  /* height: 100px; */
   transition: opacity 0.3s ease;
 }
 
-
 .light-bulb img {
-  width: 80px;
-  height: 80px;
-
+  width: 45px;
+  height: 45px;
 }
 
 .lit {
   opacity: 1;
-
 }
 
 .unlit {
@@ -77,40 +92,42 @@ textarea {
   filter: invert(0.3);
 }
 
+.dark-mode-text {
+  font-size: 15px;
+  font-weight: 900;
+  /* Adjust font size as needed */
+  color: #ffffff;
+  text-transform: capitalize;
+  /* Capitalize the text */
+  margin-top: 5px;
+  /* Add top margin for spacing */
+}
+
 .light-bulb img:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-
-  .light-bulb img {
+/* @media (max-width: 768px) { */
+/* .light-bulb img {
     width: 60px;
     height: 60px;
-  }
+  } */
 
-  .light-bulb {
-    width: 60px;
-    height: 60px;
-    bottom: 50px
-  }
-
-
-
-  .dark-mode-button {
+/* .dark-mode-button {
     width: 50px;
-    height: 70px;
-
-  }
-}
+    height: auto;
+    /* Change height to auto */
+/* } */
+/* }
 
 @media (max-width: 480px) {
   .light-bulb {
     width: 50px;
     height: 50px;
-  }
+  } */
 
-  .light-bulb img {
-    width: 50px;
+/* .light-bulb img { */
+/* width: 50px;
     height: 50px;
   }
-}
+} */

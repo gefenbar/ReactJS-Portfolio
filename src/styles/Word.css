@@ -1,0 +1,87 @@
+/* Word.css */
+#Word {
+    position: relative;
+    margin: 0 auto;
+    width: 750px;
+    height: 600px;
+    /* Set a fixed height */
+    overflow: hidden;
+    /* Hide overflowed content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    text-align: center;
+    background-color: transparent;
+    bottom: 100px;
+}
+
+/* Style the Word document frame image */
+.word-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-left: -22px; */
+    /* padding-bottom: 40px; */
+    /* margin-top: -0px; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Style the content within the Word document frame */
+.word-content {
+    padding: 30px;
+    margin-top: 150px;
+    width: 90%
+}
+
+/* Define different styles for each line */
+#h1_on_Word {
+    font-size: 30px;
+    color: #FF5733;
+}
+
+#h2_on_Word {
+    font-size: 45px;
+    color: #33FF57;
+}
+
+#h3_on_Word {
+    font-size: 35px;
+    color: #5733FF;
+}
+
+#h4_on_Word {
+    font-size: 25px;
+    color: #FF3366;
+}
+
+#button_on_Word {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #068FFF;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+#button_on_Word:hover {
+    transform: scale(1.05);
+    background-color: #068FFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    #Word {
+        width: 100%;
+        height: auto;
+        /* Remove fixed height for responsiveness */
+    }
+}

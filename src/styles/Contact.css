@@ -1,44 +1,58 @@
+/* Contact.css */
+#contact {
+    position: relative;
+    margin: 0 auto;
+    height: 600px;
+    width: 750px;
+    /* Adjust the max width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Use a light gray background color */
+    border-radius: 5px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    bottom: 100px;
+    border: 4px solid #ccc;
+}
+
 /* Style for form elements */
 .form-group {
     margin-bottom: 20px;
-
 }
 
 /* Style for labels */
 .form-group label {
     display: block;
-    font-weight: 500;
+    font-weight: 600;
+    /* Increase font weight for labels */
     margin-bottom: 5px;
-    font-size: 22px;
-
+    font-size: 18px;
+    /* Decrease font size for labels */
 }
 
-/* Style for input fields and textareas */
+/* Style for input fields */
 .form-group input[type="text"],
 .form-group input[type="email"] {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
+    /* Use a lighter border color */
     font-size: 16px;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 8px;
+    /* Slightly round the corners */
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeIn 0.5s ease;
-    filter: drop-shadow(2px 4px 6px black);
-}
-
-#contact textarea {
-    background-color: #fff;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeIn 0.5s ease;
-    filter: drop-shadow(2px 4px 6px black);
-    padding: 10px;
-    border: 1px solid #ddd;
-    max-width: 270px;
-    max-height: 100px;
-    min-height: 120px;
-    min-width: 210px;
+    max-width: 550px;
+    min-width: 400px;
+    min-height: 40px;
+    /* Set a minimum height */
+    resize: horizontal;
+    /* Allow horizontal resizing only */
 }
 
 /* Style for the submit button */
@@ -50,7 +64,8 @@ form button[type="submit"] {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 22px;
+    font-size: 18px;
+    /* Decrease font size for the button */
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -60,34 +75,53 @@ form button[type="submit"]:hover {
     background-color: #4E4FEB;
 }
 
-#contact {
-    transform: translateY(-5%) translateZ(0px);
-    width: 700px;
+/* Style for Gmail logo and "New Message" text */
+.gmail-logo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 12px;
+    font-size: 18px;
+    /* Adjust font size for the text */
+    margin-bottom: 50px;
 }
 
+.gmail-logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    /* Add some spacing between the logo and text */
+}
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
 
     /* Adjust styles for responsive Contact component */
     #contact {
-        width: 320px;
+        width: 100%;
+        /* Make it full width on smaller screens */
     }
 
+    /* Adjust font size for labels and inputs */
+    .form-group label,
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+        font-size: 16px;
+        /* Decrease font size for smaller screens */
+    }
 }
 
-@media (max-width:430px) {
+@media (max-width: 430px) {
 
-    /* Adjust styles for responsive Contact component */
+    /* Adjust styles for smaller screens */
     #contact {
-        width: 290px;
+        width: 90%;
+        /* Decrease the width for smaller screens */
+    }
+
+    /* Adjust font size for labels and inputs on smaller screens */
+    .form-group label,
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+        font-size: 14px;
+        /* Further decrease font size for smaller screens */
     }
 }

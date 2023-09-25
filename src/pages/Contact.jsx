@@ -3,11 +3,7 @@ import '../styles/Contact.css';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -18,16 +14,17 @@ export default function Contact() {
         e.preventDefault();
         console.log('Form data:', formData);
         // Reset the form fields
-        setFormData({
-            name: '',
-            email: '',
-            message: '',
-        });
+        setFormData({ name: '', email: '', message: '' });
     };
 
     return (
         <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
             <div id="contact" className='section'>
+                {/* Gmail logo and "New Message" text */}
+                <div className="gmail-logo">
+                    <img src="gmail-logo.png" alt="Gmail Logo" />
+                    <span>New Message</span>
+                </div>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Name:</label>
@@ -37,9 +34,10 @@ export default function Contact() {
                         <label htmlFor="email">Email:</label>
                         <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
                     </div>
+                    {/* Change the "Message" textarea to a regular input field */}
                     <div className="form-group">
                         <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows="4" required />
+                        <input type="text" id="message" name="message" value={formData.message} onChange={handleInputChange} required />
                     </div>
                     <button type="submit">Submit</button>
                 </form>

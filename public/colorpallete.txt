@@ -1,0 +1,6 @@
+dark purple and blue palette, inspired by the night sky.
+You can use #1a0d2b as the background color, #382bf0 as the primary color,
+#5e43f3 as the secondary color, 
+#7a5af5 as the accent color, 
+and #a688fa as the text color. 
+This palette is similar to the one used by Coolors1, a popular color palette generator.

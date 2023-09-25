@@ -6,8 +6,8 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #068FFF;
-    color: black;
+    background-color: #710117;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,12 +23,7 @@ footer {
 } */
 
 
-/* Show the footer when you scroll to the bottom */
-body::before {
-    content: "";
-    height: 100px;
-    display: block;
-}
+
 
 @media (max-width: 768px) {
     #copyright {

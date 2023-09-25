@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import '../styles/Experience.css';
 import { motion } from 'framer-motion';
 
@@ -36,47 +37,59 @@ const experienceData = [
 
 // Define an array of keywords relevant to your industry
 const industryKeywords = [
-    'HTML', 'CSS', 'JavaScript', 'PHP', 'UI', 'Speed Optimization', 'SEO',
-    'Technical Support', 'Installation', 'Training', 'Software System', 'Troubleshooting'
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'PHP',
+    'UI',
+    'Speed Optimization',
+    'SEO',
+    'Technical Support',
+    'Installation',
+    'Training',
+    'Software System',
+    'Troubleshooting',
 ];
 
-export default function AboutMe() {
-    function highlightKeywords(text) {
-        const words = text.split(' ');
-        const highlightedWords = words.map((word, wordIndex) => {
-            if (industryKeywords.includes(word.replace(/[.,!?]/g, ''))) {
-                return <span key={wordIndex} className="keyword-highlight">{word} </span>;
-            }
-            return word + ' ';
-        });
 
-        return (
-            <span className="highlighted-text">
-                {highlightedWords}
-            </span>
-        );
-    }
+export default function Experience() {
+    const [openItem, setOpenItem] = useState(null);
+
+    const toggleItem = (index) => {
+        if (openItem === index) {
+            setOpenItem(null);
+        } else {
+            setOpenItem(index);
+        }
+    };
 
     return (
         <motion.div initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 1 }}>
-            <div id="experience" className='section'>
-                {experienceData.map((experience, index) => (
-                    <div key={index}>
-                        <h2>{experience.title}</h2>
-                        <details>
-                            <summary></summary>
-                            <h3>{experience.date}</h3>
-                            <ul>
+            <div id="experience" className="command-line-window">
+                <div className="command-line-title">My Proffesional Experience</div>
+                <div className="command-line-content">
+                    {experienceData.map((experience, index) => (
+                        <div key={index} className={`experience-item ${openItem === index ? 'open' : ''}`} onClick={() => toggleItem(index)}>
+                            <div className="experience-title">
+                                {experience.title}
+                                {openItem === index && (
+                                    <span className="close-button" onClick={(e) => { e.stopPropagation(); toggleItem(index); }}>
+                                        [X]
+                                    </span>
+                                )}
+                            </div>
+                            <div className="experience-date">{experience.date}</div>
+                            <div className="experience-description">
                                 {experience.description.map((item, itemIndex) => (
-                                    <li key={itemIndex}>{highlightKeywords(item)}</li>
+                                    <p key={itemIndex}>
+                                        <span className="command-prompt">$</span> {item}
+                                    </p>
                                 ))}
-                            </ul>
-                        </details>
-                    </div>
-                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <br />
-            <br />
         </motion.div>
     );
 }
