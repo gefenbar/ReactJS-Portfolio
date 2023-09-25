@@ -1,10 +1,35 @@
+.info-popup {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: 500;
+    padding: 20px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    min-width: 100px;
+    /* z-index: 999999999999999; */
+}
+
+.icon:hover .info-popup {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99999999;
+}
+
+
+
 /* Icons.css */
 .icons-container {
     position: absolute;
     left: 4%;
     bottom: 80%;
     transform: translateY(50%);
-    z-index: 200000;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -48,7 +73,7 @@
     /* transform: scale(1.1); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     filter: brightness(1.6);
-    background-color: rgba(28, 28, 106, 0.572);
+    background-color: rgba(0, 0, 129, 0.447);
 }
 
 .logo {
