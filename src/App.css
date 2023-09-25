@@ -6,6 +6,10 @@ button:active {
   /* Set the background color to inherit to maintain the original button style */
 }
 
+.under-construction {
+  color: white;
+}
+
 /* Show the footer when you scroll to the bottom */
 body::before {
   content: "";

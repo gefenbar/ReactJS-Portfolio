@@ -10,12 +10,19 @@ import Skills from './pages/Skills';
 import Icons from './Components/Icons';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
+const UnderConstruction = () => {
+  return (
+    <div className="under-construction">
+      <h1>Under Construction</h1>
+      <p>I'm working hard to bring you an amazing website. Please check back later.</p>
+    </div>
+  );
+};
 export default function App() {
   return (
     <div className="app">
-
-      <BrowserRouter>
+      <UnderConstruction />
+      {/* <BrowserRouter>
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>
@@ -27,7 +34,7 @@ export default function App() {
           </Routes>
         </AnimatePresence>
       </BrowserRouter>
-      <Icons />
+      <Icons /> */}
 
     </div>
   );
