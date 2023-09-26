@@ -87,11 +87,10 @@
 
 @media(max-width:530px) {
     .word-content {
-        width: 50%;
-        margin-right: 150px;
+        width: 70%;
+        /* margin-right: 100px; */
+        /* margin-top: 30px; */
     }
-
-
 
     #h1_on_Word {
         font-size: 20px;

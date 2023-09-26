@@ -1,8 +1,8 @@
 html,
 body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden
+  /* margin: 0; */
+  /* height: 100%; */
+  overflow-x: hidden;
 }
 
 * {
@@ -163,24 +163,33 @@ textarea {
 @media (max-width: 920px) {
   .page-container {
     width: 450px;
+  }
+}
 
+@media screen and(max-width:768px) {
+
+
+  body {
+    overflow-y: auto;
   }
 
-  @media screen and(max-width:768px) {
-    * {
-      animation: initial !important;
-    }
+  * {
+    animation: initial !important;
   }
+
+
 
   .section {
     width: 450px !important;
-    height: 750px !important;
+    height: 650px !important;
   }
 }
+
 
 @media (max-width: 530px) {
   .page-container {
     width: 300px;
+    /* height: 500px; */
   }
 
   .section {
