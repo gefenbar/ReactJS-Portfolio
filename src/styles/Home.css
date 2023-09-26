@@ -32,7 +32,8 @@
 .word-content {
     padding: 30px;
     margin-top: 150px;
-    width: 90%
+    width: 90%;
+    text-align: left;
 }
 
 #h1_on_Word {

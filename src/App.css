@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
 * {
 
   outline: none !important;
@@ -56,7 +63,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden !important;
   /* min-height: 100vh !important; */
 }
 
