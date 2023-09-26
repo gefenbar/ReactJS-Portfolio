@@ -112,7 +112,7 @@
     }
 
     .icons {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         /* grid-gap: 40px; */
     }
 
@@ -120,7 +120,7 @@
         position: relative;
         bottom: 790px;
         right: unset;
-        left: 32%;
+        left: 25%;
     }
 
     .icon-title {
@@ -136,4 +136,17 @@
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 920px) {
+    .icons-container {
+        left: 7%;
+    }
+
+    .icon-title {
+        font-size: 88%;
+    }
+
+    .section {
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+}

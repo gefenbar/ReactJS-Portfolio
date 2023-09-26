@@ -90,7 +90,9 @@ textarea {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+
 }
+
 
 /* Add this CSS for the DarkModeBtn */
 .dark-mode-button-container {
@@ -116,6 +118,29 @@ textarea {
   padding-right: 10px;
 
 }
+
+@media (max-width: 920px) {
+  .page-container {
+    /* width: 100%; */
+    /* Set the width to 100% to make it responsive */
+    /* max-width: 100%; */
+    /* Limit the maximum width to the viewport width */
+    /* margin: 0; */
+    /* Remove margin to center it horizontally */
+    /* bottom: 0; */
+    /* Adjust the bottom as needed */
+    /* font-size: 14px; */
+    width: 450px;
+
+  }
+
+  .section {
+    width: 450px !important;
+    height: 750px !important;
+  }
+}
+
+
 
 
 /* @media (max-width: 768px) { */

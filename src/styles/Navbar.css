@@ -28,7 +28,7 @@
 }
 
 #nav ul li {
-    margin: 0 20px;
+    margin: 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,4 +111,41 @@
 
 .light-bulb img:hover {
     transform: scale(1.05);
+}
+
+
+@media (max-width: 920px) {
+    #nav ul li {
+        margin: 0 5px;
+    }
+
+    #nav ul li a.menu_item {
+        width: 100px;
+        font-size: 14px;
+        height: 55px;
+    }
+
+    .light-bulb img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Add this media query for screens with a max-width of 768px */
+@media (max-width: 768px) {
+
+    /* Hide the menu items */
+    #nav ul.menu-items {
+        display: none;
+    }
+
+    /* Style the menu button */
+    #nav .menu-button {
+        display: block;
+        /* Show the menu button */
+        text-align: center;
+        cursor: pointer;
+        font-size: 24px;
+        color: #ffffff;
+    }
 }

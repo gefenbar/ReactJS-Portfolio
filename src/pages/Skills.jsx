@@ -14,10 +14,7 @@ const skillsData = [
     { name: 'Selenium', image: 'selenium.png' },
     { name: 'React', image: 'react.svg' },
     { name: 'Flask', image: 'flask.svg' },
-    { name: 'SQL', image: 'sql.png' },
-
-
-];
+    { name: 'SQL', image: 'sql.png' },];
 
 
 export default function Skills() {

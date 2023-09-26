@@ -63,6 +63,23 @@
 
 
 @media (max-width: 768px) {
+
+    #h1_on_Word {
+        font-size: 25px;
+    }
+
+    #h2_on_Word {
+        font-size: 40px;
+    }
+
+    #h3_on_Word {
+        font-size: 30px;
+    }
+
+    #h4_on_Word {
+        font-size: 20px;
+    }
+
     #Word {
         width: 100%;
         height: auto;

@@ -18,7 +18,7 @@ export default function Contact() {
 
     return (
         <PageEffect>
-            <div className="contact page-container">
+            <div className="page-container">
                 <div className="page-top-bar">
                     <img src="mail-logo.png" alt="Windows Icon" />
                     <h1>Email</h1>

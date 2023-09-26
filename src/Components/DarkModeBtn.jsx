@@ -22,13 +22,11 @@ export default function DarkModeButton() {
   };
 
   return (
-    <div className="dark-mode-button-container">
-      <button className={`dark-mode-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} onClick={toggleDarkMode}>
-        <div className="light-bulb">
-          <img src="bulb.png" alt={isDarkMode ? 'Dark Mode' : 'Light Mode'} className={isDarkMode ? 'lit' : 'unlit'} />
-        </div>
-        <div className="dark-mode-text">{isDarkMode ? 'Dark' : 'Light'}</div>
-      </button>
-    </div>
+    <button className={`dark-mode-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} onClick={toggleDarkMode}>
+      <div className="light-bulb">
+        <img src="bulb.png" alt={isDarkMode ? 'Dark Mode' : 'Light Mode'} className={isDarkMode ? 'lit' : 'unlit'} />
+      </div>
+      <div className="dark-mode-text">{isDarkMode ? 'Dark' : 'Light'}</div>
+    </button>
   );
 }

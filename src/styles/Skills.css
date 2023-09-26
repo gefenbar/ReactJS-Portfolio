@@ -127,8 +127,15 @@
     }
 }
 
-@media(max-width:768px) {
-    /* #wrap-circles {
-        transform: translateY(-3%) translateZ(0px);
-    } */
+@media(max-width:920px) {
+    .container-circle {
+        width: 90px;
+        font-size: 14px;
+    }
+
+    .container-circle img {
+        width: 60px;
+        height: 60px;
+
+    }
 }

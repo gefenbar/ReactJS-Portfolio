@@ -38,8 +38,6 @@ export default function Home() {
                     <h1>Word</h1>
                 </div>
                 <div id="Word" className='section'>
-                    {/* Add a Word document frame image */}
-                    {/* <img src="word.png" alt="Word Frame" className="word-frame" /> */}
                     <div className="word-content">
                         <h1 id="h1_on_Word">
                             {showFirstLine && (

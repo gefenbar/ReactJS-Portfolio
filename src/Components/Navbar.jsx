@@ -57,11 +57,12 @@ export default function Navbar() {
                         </NavLink>
                     </li>
                 ))}
-                {/* Place the DarkModeBtn as an item in the navigation list */}
-                <li>
-                    <DarkModeBtn />
-                </li>
             </ul>
+            <div className="menu-button" onClick={toggleMenu}>
+                ☰ {/* You can replace this with your menu icon */}
+            </div>
+            <DarkModeBtn />
+
         </div>
     );
 }

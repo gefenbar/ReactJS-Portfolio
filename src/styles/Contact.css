@@ -80,10 +80,10 @@ form button[type="submit"]:hover {
     margin-right: 10px;
 } */
 
-@media (max-width: 768px) {
-    #contact {
+@media (max-width: 920px) {
+    /* #contact {
         width: 100%;
-    }
+    } */
 
     .form-group label,
     .form-group input[type="text"],
@@ -93,7 +93,7 @@ form button[type="submit"]:hover {
     }
 }
 
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
     #contact {
         width: 90%;
     }
@@ -104,4 +104,4 @@ form button[type="submit"]:hover {
     .form-group textarea {
         font-size: 14px;
     }
-}
+} */

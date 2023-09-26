@@ -24,8 +24,7 @@ const experienceData = [
         title: 'Bachelor of Science (B.Sc) - Computer Science',
         date: '2019 - 2023',
         description: [
-            'Recently graduated with a Bachelor of Science degree in Computer Science from Sapir College.',
-            ,
+            'Recently graduated with a Bachelor of Science degree in Computer Science from Sapir College.'
         ],
     },
     {
@@ -53,35 +52,36 @@ export default function Experience() {
     };
 
     return (
-        <PageEffect>        <div className="page-container">
-            <div className="page-top-bar">
-                <img src="command-line-logo.png" alt="Command Line logo" />
-                <h1>Command Line</h1>
-            </div>
-            <div id="experience" className="command-line-window">
-                {/* <div className="command-line-title">My Professional Experience</div> */}
-                <div className="command-line-content">
-                    {experienceData.map((experience, index) => (
-                        <div
-                            key={index}
-                            className={`experience-item ${openItem === index ? 'open' : ''}`}
-                            onClick={() => toggleItem(index)}
-                        >
-                            <div className="experience-title">
-                                {experience.title}
+        <PageEffect>
+            <div className="page-container">
+                <div className="page-top-bar">
+                    <img src="command-line-logo.png" alt="Command Line logo" />
+                    <h1>Command Line</h1>
+                </div>
+                <div id="experience" className="command-line-window">
+                    {/* <div className="command-line-title">My Professional Experience</div> */}
+                    <div className="command-line-content">
+                        {experienceData.map((experience, index) => (
+                            <div
+                                key={index}
+                                className={`experience-item ${openItem === index ? 'open' : ''}`}
+                                onClick={() => toggleItem(index)}
+                            >
+                                <div className="experience-title">
+                                    {experience.title}
+                                </div>
+                                <div className="experience-date">{experience.date}</div>
+                                <div className="experience-description">
+                                    {experience.description.map((item, itemIndex) => (
+                                        <p key={itemIndex}>
+                                            <span className="command-prompt">$</span> {item}
+                                        </p>
+                                    ))}
+                                </div>
                             </div>
-                            <div className="experience-date">{experience.date}</div>
-                            <div className="experience-description">
-                                {experience.description.map((item, itemIndex) => (
-                                    <p key={itemIndex}>
-                                        <span className="command-prompt">$</span> {item}
-                                    </p>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
         </PageEffect >);
 }

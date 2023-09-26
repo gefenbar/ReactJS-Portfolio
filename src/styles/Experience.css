@@ -15,28 +15,12 @@
     font-weight: 600;
     background-color: #000;
     margin: 0 auto;
-    /* border: 3px solid #00ff00; */
-    /* border-radius: 5px; */
     display: flex;
     flex-direction: column;
-    /* Stack items vertically on smaller screens */
     justify-content: flex-start;
-    /* Align items to the top */
-
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-
-/* .command-line-title {
-    font-size: 18px;
-    font-weight: 600;
-    padding: 5px 10px;
-    background-color: #00ff00;
-    color: #000;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 
 .command-line-content {
@@ -91,6 +75,24 @@
     font-weight: 600;
 }
 
+@media (max-width: 920px) {
+    .command-line-window {
+        width: 100%;
+        /* Adjust the width as needed */
+    }
+
+    .experience-title {
+        font-size: 15px;
+    }
+
+    .experience-date {
+        font-size: 15px;
+    }
+
+    .experience-description {
+        font-size: 14px;
+    }
+}
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
@@ -100,15 +102,5 @@
         /* Make the window full width on smaller screens */
     }
 
-    .experience-title {
-        font-size: 14px;
-    }
 
-    .experience-date {
-        font-size: 14px;
-    }
-
-    .experience-description {
-        font-size: 14px;
-    }
 }
