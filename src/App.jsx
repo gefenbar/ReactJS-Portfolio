@@ -8,8 +8,7 @@ import Contact from './pages/Contact';
 import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Icons from './Components/Icons';
-import { motion, AnimatePresence } from 'framer-motion';
-// Import React and other necessary libraries
+import { AnimatePresence } from 'framer-motion';
 
 const UnderConstruction = () => {
   return (
@@ -25,9 +24,9 @@ const UnderConstruction = () => {
 };
 
 export default function App() {
+
   return (
     <div className="app">
-
       {/* <UnderConstruction /> */}
       <BrowserRouter>
         <Navbar />
@@ -44,5 +43,6 @@ export default function App() {
       <Icons />
 
     </div >
+
   );
 }

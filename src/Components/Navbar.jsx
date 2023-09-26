@@ -48,21 +48,26 @@ export default function Navbar() {
                 <div className="time">{currentTime}</div>
                 <div className="date">{currentDate}</div>
             </div>
-            <ul className={`menu-items ${menuOpen ? 'open' : ''}`}>
-                {navItems.map((item, index) => (
-                    <li key={index}>
-                        <NavLink to={item.to} className="menu_item" onClick={toggleMenu}>
-                            <img src={item.icon} alt={item.label} className="menu-icon" />
-                            {item.label}
-                        </NavLink>
-                    </li>
-                ))}
-            </ul>
-            <div className="menu-button" onClick={toggleMenu}>
-                ☰ {/* You can replace this with your menu icon */}
-            </div>
             <DarkModeBtn />
 
+
+            {/* Mobile-friendly menu */}
+            <div className="mobile-menu">
+
+                <ul className={`menu-items ${menuOpen ? 'open' : 'close'}`}>
+                    {navItems.map((item, index) => (
+                        <li key={index}>
+                            <NavLink to={item.to} className="menu_item" onClick={toggleMenu}>
+                                <img src={item.icon} alt={item.label} className="menu-icon" />
+                                {item.label}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+                <div className={`small-menu-button ${menuOpen ? 'open' : 'close'}`} onClick={toggleMenu}>
+                    {menuOpen ? '✕' : '☰'}
+                </div>
+            </div>
         </div>
     );
 }

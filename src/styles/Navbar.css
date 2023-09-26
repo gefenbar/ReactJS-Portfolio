@@ -13,6 +13,10 @@
     padding: 10px 0;
 }
 
+.small-menu-button {
+    display: none;
+}
+
 .datetime {
     position: absolute;
     left: 9px;
@@ -51,25 +55,18 @@
     justify-content: space-between;
 }
 
-#nav ul li:hover a.menu_item,
+
 #nav ul li a.menu_item.active {
     color: black;
-    /* Change color on hover and when active */
     background-color: #777;
-    /* Add background color on hover and when active */
 }
 
-/* Add styles for the icons */
 .menu-icon {
     width: 30px;
-    /* Adjust icon width as needed */
     height: 30px;
-    /* Adjust icon height as needed */
     margin-bottom: 5px;
-    /* Adjust spacing between icon and label */
 }
 
-/* Logo styles */
 #logo {
     width: 60px;
     height: 60px;
@@ -78,9 +75,6 @@
 
 .light-bulb {
     position: relative;
-    /* Change to relative positioning */
-    /* width: 100px; */
-    /* height: 100px; */
     transition: opacity 0.3s ease;
 }
 
@@ -101,18 +95,21 @@
 .dark-mode-text {
     font-size: 15px;
     font-weight: 900;
-    /* Adjust font size as needed */
     color: #ffffff;
     text-transform: capitalize;
-    /* Capitalize the text */
-    /* margin-top: 5px; */
-    /* Add top margin for spacing */
 }
 
-.light-bulb img:hover {
-    transform: scale(1.05);
-}
+@media(hover:hover) {
 
+    #nav ul li:hover a.menu_item {
+        color: black;
+        background-color: #777;
+    }
+
+    .light-bulb img:hover {
+        transform: scale(1.05);
+    }
+}
 
 @media (max-width: 920px) {
     #nav ul li {
@@ -129,23 +126,46 @@
         width: 35px;
         height: 35px;
     }
+
+    .light-bulb {
+        padding: 1px;
+    }
 }
+
 
 /* Add this media query for screens with a max-width of 768px */
 @media (max-width: 768px) {
-
-    /* Hide the menu items */
-    #nav ul.menu-items {
-        display: none;
+    #nav ul {
+        flex-direction: column;
     }
 
-    /* Style the menu button */
-    #nav .menu-button {
+    .mobile-menu .menu-items.close {
+        display: none !important;
+    }
+
+    .mobile-menu .small-menu-button {
+        margin-bottom: 6px;
+        padding-top: 6px;
         display: block;
-        /* Show the menu button */
         text-align: center;
         cursor: pointer;
         font-size: 24px;
         color: #ffffff;
     }
+
+    .mobile-menu .small-menu-button.open+ul.menu-items {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #nav {
+        background-color: #000000bb !important;
+
+    }
+
+    #nav ul li a.menu_item {
+        margin: 10px;
+    }
+
 }

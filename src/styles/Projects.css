@@ -23,18 +23,6 @@
     position: relative;
 }
 
-.folder-card:hover {
-    z-index: 1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #c9ce234b;
-}
-
-/* .folder-icon { */
-/* width: 50px; */
-/* height: 50px; */
-/* margin-bottom: 100px; */
-/* } */
-
 .folder-icon img {
     width: 100px;
     height: 100px;
@@ -45,6 +33,14 @@
     margin: 0;
     text-align: center;
     font-weight: 700;
+}
+
+@media(hover:hover) {
+    .folder-card:hover {
+        z-index: 1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #c9ce234b;
+    }
 }
 
 @media (max-width: 920px) {

@@ -1,3 +1,30 @@
+* {
+  animation: initial !important;
+  
+}
+
+:root {
+  --color-background-light: #ffffff;
+  --color-text-light: #000000;
+
+  --color-background-dark: #000000;
+  --color-text-dark: #ffffff;
+}
+
+/* 
+#light {
+  background-color: white; */
+/* background: url('/windows-abstract.webp'); */
+/* color: var(--color-text-light); */
+/* } */
+
+/* #dark { */
+/* background-color: black; */
+/* background: url('/dark-sand.jpg'); */
+/* color: var(--color-text-dark); */
+/* } */
+
+
 button:focus,
 button:active {
   outline: none;
@@ -119,17 +146,14 @@ textarea {
 
 }
 
+@media (max-width: 1250px) {
+  .page-container {
+    bottom: 50px;
+  }
+}
+
 @media (max-width: 920px) {
   .page-container {
-    /* width: 100%; */
-    /* Set the width to 100% to make it responsive */
-    /* max-width: 100%; */
-    /* Limit the maximum width to the viewport width */
-    /* margin: 0; */
-    /* Remove margin to center it horizontally */
-    /* bottom: 0; */
-    /* Adjust the bottom as needed */
-    /* font-size: 14px; */
     width: 450px;
 
   }
@@ -139,31 +163,3 @@ textarea {
     height: 750px !important;
   }
 }
-
-
-
-
-/* @media (max-width: 768px) { */
-/* .light-bulb img {
-    width: 60px;
-    height: 60px;
-  } */
-
-/* .dark-mode-button {
-    width: 50px;
-    height: auto;
-    /* Change height to auto */
-/* } */
-/* }
-
-@media (max-width: 480px) {
-  .light-bulb {
-    width: 50px;
-    height: 50px;
-  } */
-
-/* .light-bulb img { */
-/* width: 50px;
-    height: 50px;
-  }
-} */
