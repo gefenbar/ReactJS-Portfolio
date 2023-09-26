@@ -7,12 +7,6 @@ body {
 
 }
 
-* {
-
-  outline: none !important;
-
-}
-
 :root {
   --color-background-light: #ffffff;
   --color-text-light: #000000;

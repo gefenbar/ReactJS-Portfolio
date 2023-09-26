@@ -14,10 +14,20 @@
   background-size: cover;
 }
 
+* {
+
+  outline: none !important;
+
+}
+
 a {
   font-weight: 500;
   /* color: white; */
   text-decoration: inherit;
+}
+/* Remove the default focus outline */
+*:focus {
+  outline: none;
 }
 
 
