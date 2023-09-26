@@ -116,7 +116,7 @@
 
     .icons-container {
         position: relative;
-        bottom: 770px;
+        bottom: 750px;
         right: unset;
         left: 25%;
     }
@@ -156,7 +156,7 @@
 @media (max-width:768px) {
     .icons-container {
         position: absolute;
-        top: 150px;
+        top: 60px;
         width: 100%;
         left: 0;
 

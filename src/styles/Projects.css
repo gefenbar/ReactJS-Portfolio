@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
+    overflow-y: auto;
 }
 
 .folder-card a {

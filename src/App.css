@@ -191,7 +191,7 @@ textarea {
 
 @media (max-width: 530px) {
   .page-container {
-    overflow-y: auto;
+    /* overflow-y: auto; */
     width: 300px;
     height: 450px;
   }
