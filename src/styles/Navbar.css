@@ -135,9 +135,9 @@
 
 /* Add this media query for screens with a max-width of 768px */
 @media (max-width: 768px) {
-    #nav {
+    /* #nav {
         position: absolute;
-    }
+    } */
 
     #nav ul {
         flex-direction: column-reverse;
