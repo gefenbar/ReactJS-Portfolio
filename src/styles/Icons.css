@@ -169,6 +169,16 @@
 }
 
 @media (max-width: 530px) {
+    .icons-container {
+        /* position: absolute; */
+        top: 50px;
+        width: 100%;
+        left: 0;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* left: 150px; */
+        /* right: 150px */
+    }
 
     .icons {
         grid-gap: 35px;
