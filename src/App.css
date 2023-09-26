@@ -207,8 +207,6 @@ textarea {
     animation: initial !important;
   }
 
-
-
   .section {
     width: 450px !important;
     height: 650px !important;
@@ -219,6 +217,7 @@ textarea {
 @media (max-width: 530px) {
   .page-container {
     /* overflow-y: auto; */
+    bottom: 100px;
     width: 300px;
     height: 450px;
   }
