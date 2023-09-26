@@ -87,6 +87,21 @@ textarea {
   padding: 0;
 }
 
+#landscape-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  /* Make sure it appears above other elements */
+}
+
 .page-top-bar {
   display: flex;
   align-items: center;

@@ -23,11 +23,16 @@ const UnderConstruction = () => {
   );
 };
 
+
+
 export default function App() {
 
   return (
     <div className="app">
       {/* <UnderConstruction /> */}
+      <div id="landscape-message">
+        Please rotate your device to portrait mode.
+      </div>
       <BrowserRouter>
         <Navbar />
         <AnimatePresence mode="wait">
