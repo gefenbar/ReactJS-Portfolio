@@ -26,7 +26,7 @@
 .icons-container {
     position: absolute;
     left: 4%;
-    bottom: 80%;
+    bottom: 75%;
     transform: translateY(50%);
     display: flex;
     flex-direction: column;
