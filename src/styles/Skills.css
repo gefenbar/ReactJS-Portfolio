@@ -133,7 +133,13 @@
     .container-circle {
         width: 90px;
         font-size: 14px;
+
     }
+
+    #wrap-circles {
+        overflow-y: scroll !important;
+    }
+
 
     .container-circle img {
         width: 60px;
