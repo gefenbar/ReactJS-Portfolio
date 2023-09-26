@@ -2,12 +2,14 @@
   font-family: "Montserrat";
   src:
     url("/Montserrat.ttf") format("truetype");
+  font-display: swap;
+
 }
 
 :root {
   font-family: Montserrat, sans-serif;
   line-height: 1.5;
-  background: url('/dark-sand.jpg');
+  background: url('/dark-sand.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }

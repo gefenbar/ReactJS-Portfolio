@@ -89,6 +89,18 @@ textarea {
 
 #landscape-message {
   display: none;
+  /* Display the message when in landscape mode */
+}
+
+@media screen and (orientation: landscape) {
+  #landscape-message {
+    display: block;
+    /* Display the message when in landscape mode */
+  }
+}
+
+#landscape-message {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;

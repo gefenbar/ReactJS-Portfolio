@@ -13,6 +13,8 @@
     padding: 10px 0;
 }
 
+
+
 .small-menu-button {
     display: none;
 }
@@ -155,6 +157,14 @@
         cursor: pointer;
         font-size: 24px;
         color: #ffffff;
+    }
+
+    .small-menu-button img {
+        width: 24px;
+        /* Adjust the width and height as needed */
+        height: 24px;
+        margin: 0;
+        padding: 0;
     }
 
     .mobile-menu .small-menu-button.open+ul.menu-items {

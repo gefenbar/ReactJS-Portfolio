@@ -106,14 +106,14 @@
 @media (max-width: 530px) {
 
     .experience-title {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .experience-date {
-        font-size: 14px;
+        font-size: 14.5px;
     }
 
     .experience-description {
-        font-size: 13px;
+        font-size: 14px;
     }
 }

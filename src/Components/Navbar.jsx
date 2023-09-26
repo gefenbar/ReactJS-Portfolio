@@ -65,8 +65,9 @@ export default function Navbar() {
                     ))}
                 </ul>
                 <div className={`small-menu-button ${menuOpen ? 'open' : 'close'}`} onClick={toggleMenu}>
-                    {menuOpen ? '✕' : '☰'}
+                    {menuOpen ? '✕' : <img src="windows2.png" alt="Menu" />}
                 </div>
+
             </div>
         </div>
     );
