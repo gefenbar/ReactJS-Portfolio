@@ -7,13 +7,13 @@ body {
 
 }
 
-:root {
+/* :root {
   --color-background-light: #ffffff;
   --color-text-light: #000000;
 
   --color-background-dark: #000000;
   --color-text-dark: #ffffff;
-}
+} */
 
 /* 
 #light {
@@ -32,16 +32,13 @@ body {
 button:focus,
 button:active {
   outline: none;
-  /* This removes the outline */
   background-color: inherit;
-  /* Set the background color to inherit to maintain the original button style */
 }
 
 .under-construction {
   color: white;
 }
 
-/* Show the footer when you scroll to the bottom */
 body::before {
   content: "";
   height: 100px;
@@ -199,6 +196,11 @@ textarea {
 
   * {
     animation: initial !important;
+  }
+
+  /* Remove the default focus outline */
+  *:focus {
+    outline: none !important;
   }
 
   .section {

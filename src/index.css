@@ -25,10 +25,8 @@ a {
   /* color: white; */
   text-decoration: inherit;
 }
-/* Remove the default focus outline */
-*:focus {
-  outline: none;
-}
+
+
 
 
 body {
