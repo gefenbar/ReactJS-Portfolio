@@ -135,9 +135,13 @@
 }
 
 @media (max-width: 920px) {
+
     .icons-container {
-        left: 7%;
+        /* position: absolute; */
+        left: 25px;
+        top: -620px
     }
+
 
     .icon-title {
         font-size: 88%;
@@ -149,11 +153,22 @@
     }
 }
 
-@media (max-width: 530px) {
-
+@media (max-width:768px) {
     .icons-container {
-        left: 0%;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        left: 0;
+
+        justify-content: center;
+        align-items: center;
+        /* left: 150px; */
+        /* right: 150px */
     }
+
+}
+
+@media (max-width: 530px) {
 
     .icons {
         grid-gap: 35px;

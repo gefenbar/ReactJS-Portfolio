@@ -61,7 +61,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
 
     #h1_on_Word {
         font-size: 25px;
@@ -80,7 +80,7 @@
     }
 
     #Word {
-        width: 70%;
+        width: 80%;
         height: auto;
     }
 }

@@ -163,6 +163,7 @@ textarea {
 @media (max-width: 920px) {
   .page-container {
     width: 450px;
+    height: 450px;
   }
 }
 
@@ -188,8 +189,9 @@ textarea {
 
 @media (max-width: 530px) {
   .page-container {
+    overflow-y: auto;
     width: 300px;
-    /* height: 500px; */
+    height: 450px;
   }
 
   .section {
