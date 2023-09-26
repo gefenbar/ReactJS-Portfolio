@@ -84,6 +84,8 @@
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
+    font-weight: 500;
+
 }
 
 @media(hover:hover) {
@@ -96,7 +98,6 @@
         filter: brightness(1.6);
         background-color: rgba(0, 0, 129, 0.447);
     }
-
 }
 
 
@@ -146,4 +147,26 @@
         margin-top: 0 !important;
         padding: 0 !important;
     }
+}
+
+@media (max-width: 530px) {
+
+    .icons-container {
+        left: 0%;
+    }
+
+    .icons {
+        grid-gap: 35px;
+    }
+
+    .icon-title {
+        font-size: 13px;
+    }
+
+    .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+
 }

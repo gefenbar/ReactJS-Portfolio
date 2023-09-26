@@ -18,8 +18,7 @@
     bottom: 100px;
 }
 
-/* Style the Word document frame image */
-.word-frame {
+/* .word-frame {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +26,7 @@
     height: 100%;
     z-index: -1;
 
-}
+} */
 
 /* Style the content within the Word document frame */
 .word-content {
@@ -80,8 +79,32 @@
     }
 
     #Word {
-        width: 100%;
+        width: 70%;
         height: auto;
-        /* Remove fixed height for responsiveness */
+    }
+}
+
+@media(max-width:530px) {
+    .word-content {
+        width: 50%;
+        margin-right: 150px;
+    }
+
+
+
+    #h1_on_Word {
+        font-size: 20px;
+    }
+
+    #h2_on_Word {
+        font-size: 35px;
+    }
+
+    #h3_on_Word {
+        font-size: 25px;
+    }
+
+    #h4_on_Word {
+        font-size: 16px;
     }
 }

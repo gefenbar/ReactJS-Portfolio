@@ -101,6 +101,19 @@
         width: 100%;
         /* Make the window full width on smaller screens */
     }
+}
 
+@media (max-width: 530px) {
 
+    .experience-title {
+        font-size: 14px;
+    }
+
+    .experience-date {
+        font-size: 14px;
+    }
+
+    .experience-description {
+        font-size: 13px;
+    }
 }

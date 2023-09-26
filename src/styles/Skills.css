@@ -1,11 +1,3 @@
-* {
-    animation: initial;
-}
-
-.skills.page-container {
-    background-color: black !important;
-}
-
 /* Play button container */
 .play-button-container {
     display: flex;
@@ -147,5 +139,21 @@
         width: 60px;
         height: 60px;
 
+    }
+}
+
+@media (max-width: 530px) {
+    .container-circle {
+        width: calc(33.33% - 6px);
+        /* Divide into 3 columns with some spacing */
+        height: 50px;
+        font-size: 0;
+        margin: 3px;
+        margin-top: 20px;
+    }
+
+    .container-circle img {
+        width: 45px;
+        height: 45px;
     }
 }

@@ -1,6 +1,7 @@
 * {
-  animation: initial !important;
-  
+
+  outline: none !important;
+
 }
 
 :root {
@@ -158,8 +159,24 @@ textarea {
 
   }
 
+  @media screen and(max-width:768px) {
+    * {
+      animation: initial !important;
+    }
+  }
+
   .section {
     width: 450px !important;
     height: 750px !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .page-container {
+    width: 300px;
+  }
+
+  .section {
+    width: 300px !important;
   }
 }
