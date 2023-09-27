@@ -3,8 +3,15 @@ body {
   /* margin: 0; */
   /* height: 100%; */
   overflow: hidden;
-  outline: none !important;
+  outline: none;
+}
 
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden !important; */
+  /* min-height: 100vh !important; */
 }
 
 /* :root {
@@ -52,13 +59,7 @@ body::before {
 
 }
 
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  /* overflow: hidden !important; */
-  /* min-height: 100vh !important; */
-}
+
 
 /* html{
   display: ;
@@ -78,12 +79,9 @@ textarea {
   padding: 0;
 }
 
-#landscape-message {
-  display: none;
-  /* Display the message when in landscape mode */
-}
 
-@media screen and (orientation:landscape) {
+@media screen and (orientation:landscape) and (max-width: 768px) {
+
   * {
     visibility: hidden;
   }
@@ -203,9 +201,9 @@ textarea {
     -webkit-tap-highlight-color: transparent;
   }
 
-  body {
+  /* body {
     overflow-y: auto;
-  }
+  } */
 
   * {
     animation: initial !important;
