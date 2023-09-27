@@ -55,7 +55,7 @@ export default function Experience() {
         <PageEffect>
             <div className="page-container">
                 <div className="page-top-bar">
-                    <img src="command-line-logo.png" alt="Command Line logo" />
+                    <img src="command-line-logo.webp" alt="Command Line logo" />
                     <h1>Command Line</h1>
                 </div>
                 <div id="experience" className="command-line-window">
