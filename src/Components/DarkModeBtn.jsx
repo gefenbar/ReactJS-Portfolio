@@ -32,7 +32,7 @@ export default function DarkModeButton() {
   return (
     <button className={`dark-mode-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} onClick={toggleDarkMode}>
       <div className="light-bulb">
-        <img src="bulb.png" alt={isDarkMode ? 'Dark Mode' : 'Light Mode'} className={isDarkMode ? 'lit' : 'unlit'} />
+        <img src="bulb.webp" alt={isDarkMode ? 'Dark Mode' : 'Light Mode'} className={isDarkMode ? 'lit' : 'unlit'} />
       </div>
       <div className="dark-mode-text">{isDarkMode ? 'Dark' : 'Light'}</div>
     </button>

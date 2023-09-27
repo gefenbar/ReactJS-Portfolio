@@ -4,11 +4,11 @@ import '../styles/Navbar.css';
 import DarkModeBtn from './DarkModeBtn';
 
 const navItems = [
-    { to: '/', label: 'Home', icon: 'word-logo.png' },
-    { to: '/experience', label: 'Experience', icon: 'command-line-logo.png' },
-    { to: '/skills', label: 'Skills', icon: 'youtube-logo.png' },
-    { to: '/projects', label: 'Projects', icon: 'folder-logo.png' },
-    { to: '/contact', label: 'Contact', icon: 'mail-logo.png' },
+    { to: '/', label: 'Home', icon: 'word-logo.webp' },
+    { to: '/experience', label: 'Experience', icon: 'command-line-logo.webp' },
+    { to: '/skills', label: 'Skills', icon: 'youtube-logo.webp' },
+    { to: '/projects', label: 'Projects', icon: 'folder-logo.webp' },
+    { to: '/contact', label: 'Contact', icon: 'mail-logo.webp' },
 ];
 
 export default function Navbar() {
@@ -65,7 +65,7 @@ export default function Navbar() {
                     ))}
                 </ul>
                 <div className={`small-menu-button ${menuOpen ? 'open' : 'close'}`} onClick={toggleMenu}>
-                    {menuOpen ? '✕' : <img src="windows.png" alt="Menu" />}
+                    {menuOpen ? '✕' : <img src="windows.webp" alt="Menu" />}
                 </div>
 
             </div>

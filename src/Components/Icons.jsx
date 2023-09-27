@@ -22,31 +22,31 @@ const Icon = ({ logo, title, url, info }) => {
 export default function Icons() {
     const iconsData = [
         {
-            logo: 'linkedin-logo.png',
+            logo: 'linkedin-logo.webp',
             title: 'LinkedIn',
             url: 'https://www.linkedin.com/in/gefen-bar/',
             info: 'Connect with me on LinkedIn',
         },
         {
-            logo: 'gmail-logo.png',
+            logo: 'gmail-logo.webp',
             title: 'Gmail',
             url: 'mailto:gefenbar23@gmail.com',
             info: 'Send me an email at gefenbar23@gmail.com',
         },
         {
-            logo: 'phone.png',
+            logo: 'phone.webp',
             title: 'Phone',
             url: 'tel:0502001376',
             info: 'Reach me at 050-200-1376',
         },
         {
-            logo: 'github-logo.png',
+            logo: 'github-logo.webp',
             title: 'GitHub',
             url: 'https://github.com/gefenbar',
             info: 'Visit my GitHub profile',
         },
         {
-            logo: 'pdf-logo.png',
+            logo: 'pdf-logo.webp',
             title: 'Resume',
             url: 'files/Gefen_Bar_Resume.pdf',
             info: 'Take a look at my resume',

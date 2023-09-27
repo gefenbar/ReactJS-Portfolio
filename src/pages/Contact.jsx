@@ -20,7 +20,7 @@ export default function Contact() {
         <PageEffect>
             <div className="page-container">
                 <div className="page-top-bar">
-                    <img src="mail-logo.png" alt="Windows Icon" />
+                    <img src="mail-logo.webp" alt="Windows Icon" />
                     <h1>Email</h1>
                 </div>
                 <form onSubmit={handleSubmit}>

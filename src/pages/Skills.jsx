@@ -3,18 +3,18 @@ import '../styles/Skills.css';
 import PageEffect from '../Components/PageEffect';
 
 const skillsData = [
-    { name: 'HTML', image: 'html.svg' },
-    { name: 'CSS', image: 'css.svg' },
+    { name: 'HTML', image: 'html.webp' },
+    { name: 'CSS', image: 'css.webp' },
     { name: 'JavaScript', image: 'js.svg' },
-    { name: 'Linux', image: 'linux.svg' },
+    { name: 'Linux', image: 'linux.webp' },
     { name: 'Java', image: 'java.svg' },
     { name: 'Python', image: 'python.svg' },
     { name: 'Github', image: 'github.svg' },
     { name: 'C#', image: 'csharp.svg' },
-    { name: 'Selenium', image: 'selenium.png' },
-    { name: 'React', image: 'react.svg' },
-    { name: 'Flask', image: 'flask.svg' },
-    { name: 'SQL', image: 'sql.png' },];
+    { name: 'Selenium', image: 'selenium.webp' },
+    { name: 'React', image: 'react.webp' },
+    { name: 'Flask', image: 'flask.webp' },
+    { name: 'SQL', image: 'sql.webp' },];
 
 
 export default function Skills() {
@@ -28,7 +28,7 @@ export default function Skills() {
         <PageEffect>
             <div className="page-container">
                 <div className="page-top-bar">
-                    <img src="youtube-logo.png" alt="Windows Icon" />
+                    <img src="youtube-logo.webp" alt="Windows Icon" />
                     <h1>Youtube</h1>
                 </div>
                 {isButtonClicked ? (
@@ -38,7 +38,7 @@ export default function Skills() {
                                 {skill.name}
                                 <div className="circle">
                                     <img
-                                        src={`/SVG/${skill.image}`}
+                                        src={`/${skill.image}`}
                                         alt={skill.name}
                                         width={100}
                                         height={150}

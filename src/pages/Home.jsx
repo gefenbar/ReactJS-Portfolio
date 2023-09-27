@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Home.css';
 import { Typewriter } from 'react-simple-typewriter';
-import { motion } from 'framer-motion';
 import PageEffect from '../Components/PageEffect';
 
 export default function Home() {
@@ -34,7 +33,7 @@ export default function Home() {
         <PageEffect>
             <div className="page-container">
                 <div className="page-top-bar">
-                    <img src="word-logo.png" alt="Windows Icon" />
+                    <img src="word-logo.webp" alt="Windows Icon" />
                     <h1>Word</h1>
                 </div>
                 <div id="Word" className='section'>

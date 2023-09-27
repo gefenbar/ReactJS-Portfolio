@@ -24,7 +24,7 @@ export default function Projects() {
         <PageEffect>
             <div className="page-container">
                 <div className="page-top-bar">
-                    <img src="folder-logo.png" alt="File Manager Icon" />
+                    <img src="folder-logo.webp" alt="File Manager Icon" />
                     <h1>File Manager</h1>
                 </div>
                 <div id="projects" className="section">
@@ -32,7 +32,7 @@ export default function Projects() {
                         <div className="folder-card" key={index}>
                             <a href={project.url} target="_blank" rel="noopener noreferrer">
                                 <div className="folder-icon">
-                                    <img src="folder-logo.png" alt="Folder Icon" />
+                                    <img src="folder-logo.webp" alt="Folder Icon" />
                                 </div>
                                 <div className="folder-info">
                                     <h2>{project.name}</h2>
