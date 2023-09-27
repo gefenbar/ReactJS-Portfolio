@@ -166,6 +166,31 @@
         /* right: 150px */
     }
 
+    input,
+    textarea,
+    button,
+    select,
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* body {
+      overflow-y: auto;
+    } */
+
+    * {
+        animation: initial !important;
+    }
+
+    /* Remove the default focus outline */
+    *:focus {
+        outline: none !important;
+    }
+
+    .icon:hover .info-popup {
+        visibility: hidden !important;
+    }
+
 }
 
 @media (max-width: 530px) {
