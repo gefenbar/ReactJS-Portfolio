@@ -83,15 +83,21 @@ textarea {
   /* Display the message when in landscape mode */
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation:landscape) {
+  * {
+    visibility: hidden;
+  }
+
   #landscape-message {
-    display: block;
+    visibility: visible !important;
+    display: block !important;
     /* Display the message when in landscape mode */
   }
 }
 
 #landscape-message {
   display: none;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -189,6 +195,13 @@ textarea {
 
 @media screen and(max-width:768px) {
 
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
 
   body {
     overflow-y: auto;
