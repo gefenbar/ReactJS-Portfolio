@@ -197,7 +197,12 @@
         flex-direction: column;
 
     }
-/* 
+
+    .light-bulb {
+        padding: 0;
+    }
+
+    /* 
     #nav {
         background-color: #000000bb !important;
 
