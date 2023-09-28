@@ -6,7 +6,7 @@
     color: white;
     font-weight: 500;
     padding: 20px 10px;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 14px;
     opacity: 0;
     visibility: hidden;
@@ -128,9 +128,9 @@
 
     .logo {
         height: 80%;
-
         width: 80%;
-
+        top: 10%;
+        left: 10%;
     }
 }
 

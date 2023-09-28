@@ -13,7 +13,7 @@ const projectsData = [
         description: '',
     },
     {
-        name: 'More on my GitHub account..',
+        name: 'GitHub account',
         url: 'https://github.com/gefenbar/',
         description: '',
     },
@@ -24,8 +24,8 @@ export default function Projects() {
         <PageEffect>
             <div className="page-container">
                 <div className="page-top-bar">
-                    <img src="folder-logo.webp" alt="File Manager Icon" />
-                    <h1>File Manager</h1>
+                    <img src="folder-logo.webp" alt="File Explrer Icon" />
+                    <h1>File Explorer</h1>
                 </div>
                 <div id="projects" className="section">
                     {projectsData.map((project, index) => (

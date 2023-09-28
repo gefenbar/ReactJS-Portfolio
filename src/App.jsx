@@ -9,7 +9,6 @@ import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Icons from './Components/Icons';
 import { AnimatePresence } from 'framer-motion';
-
 const UnderConstruction = () => {
   return (
     <div className="under-construction">

@@ -9,9 +9,10 @@
 :root {
   font-family: Montserrat, sans-serif;
   line-height: 1.5;
-  background: url('/dark-sand.webp');
+  background: url('/flare-light.webp');
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 * {

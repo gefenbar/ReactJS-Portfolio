@@ -5,16 +5,18 @@ import PageEffect from '../Components/PageEffect';
 const skillsData = [
     { name: 'HTML', image: 'html.webp' },
     { name: 'CSS', image: 'css.webp' },
-    { name: 'JavaScript', image: 'js.svg' },
+    { name: 'JavaScript', image: 'js.webp' },
     { name: 'Linux', image: 'linux.webp' },
-    { name: 'Java', image: 'java.svg' },
-    { name: 'Python', image: 'python.svg' },
-    { name: 'Github', image: 'github.svg' },
-    { name: 'C#', image: 'csharp.svg' },
-    { name: 'Selenium', image: 'selenium.webp' },
-    { name: 'React', image: 'react.webp' },
+    { name: 'Java', image: 'java.webp' },
+    { name: 'Python', image: 'python.webp' },
     { name: 'Flask', image: 'flask.webp' },
-    { name: 'SQL', image: 'sql.webp' },];
+    { name: 'React', image: 'react.webp' },
+    { name: 'Github', image: 'github.webp' },
+    { name: 'Selenium', image: 'selenium.webp' },
+
+    { name: 'SQL', image: 'sql.webp' },
+    { name: 'C#', image: 'csharp.webp' },
+];
 
 
 export default function Skills() {

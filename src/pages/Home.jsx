@@ -17,9 +17,9 @@ export default function Home() {
 
     useEffect(() => {
         const timer1 = setTimeout(() => setShowFirstLine(true), 500);
-        const timer2 = setTimeout(() => setShowSecondLine(true), text_first.length * 107);
-        const timer3 = setTimeout(() => setShowThirdLine(true), (text_first.length + text_second.length) * 117);
-        const timer4 = setTimeout(() => setShowFourthLine(true), (text_first.length + text_second.length + text_third.length) * 110);
+        const timer2 = setTimeout(() => setShowSecondLine(true), text_first.length * 100);
+        const timer3 = setTimeout(() => setShowThirdLine(true), (text_first.length + text_second.length) * 100);
+        const timer4 = setTimeout(() => setShowFourthLine(true), (text_first.length + text_second.length + text_third.length) * 70);
 
         return () => {
             clearTimeout(timer1);
@@ -34,29 +34,29 @@ export default function Home() {
             <div className="page-container">
                 <div className="page-top-bar">
                     <img src="word-logo.webp" alt="Windows Icon" />
-                    <h1>Word</h1>
+                    <h1>Microsoft Word</h1>
                 </div>
                 <div id="Word" className='section'>
                     <div className="word-content">
                         <h1 id="h1_on_Word">
                             {showFirstLine && (
-                                <Typewriter words={[text_first]} loop={1} cursor={false} typeSpeed={50} />
+                                <Typewriter words={[text_first]} loop={1} cursor={false} typeSpeed={35} />
                             )}
                         </h1>
                         <h2 id="h2_on_Word">
                             {showSecondLine && (
-                                <Typewriter words={[text_second]} loop={1} cursor={false} typeSpeed={100} />
+                                <Typewriter words={[text_second]} loop={1} cursor={false} typeSpeed={35} />
                             )}
                         </h2>
                         <h3 id="h3_on_Word">
                             {showThirdLine && (
-                                <Typewriter words={[text_third]} loop={1} cursor={false} typeSpeed={100} />
+                                <Typewriter words={[text_third]} loop={1} cursor={false} typeSpeed={35} />
                             )}
                         </h3>
                         <br />
                         <h4 id="h4_on_Word">
                             {showFourthLine && (
-                                <Typewriter words={[text_fourth]} loop={1} cursor={false} typeSpeed={100} />
+                                <Typewriter words={[text_fourth]} loop={1} cursor={false} typeSpeed={35} />
                             )}
                         </h4>
                         <br />

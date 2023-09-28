@@ -34,7 +34,7 @@ export default function Icons() {
             info: 'Send me an email at gefenbar23@gmail.com',
         },
         {
-            logo: 'phone.webp',
+            logo: 'skype.webp',
             title: 'Phone',
             url: 'tel:0502001376',
             info: 'Reach me at 050-200-1376',
