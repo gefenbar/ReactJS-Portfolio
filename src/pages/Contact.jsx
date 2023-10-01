@@ -34,7 +34,7 @@ export default function Contact() {
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message:</label>
-                        <textarea type="text" id="message" name="message" placeholder='insert your message' value={formData.message} onChange={handleInputChange} required />
+                        <textarea type="text" id="message" name="message" placeholder='Insert your message' value={formData.message} onChange={handleInputChange} required />
                     </div>
                     <button type="submit">Submit</button>
                 </form>
