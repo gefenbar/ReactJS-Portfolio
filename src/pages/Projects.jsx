@@ -13,8 +13,12 @@ const projectsData = [
         description: '',
     },
     {
-        name: 'GitHub account',
+        name: 'VanillaJS Portfolio',
         url: 'https://github.com/gefenbar/',
+        description: '',
+    }, {
+        name: 'GitHub account',
+        url: 'https://github.com/gefenbar/VanillaJS-Portfolio',
         description: '',
     },
 ];
