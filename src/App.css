@@ -143,9 +143,7 @@ textarea {
   bottom: 100px;
   background-color: #f0f0f0;
   padding: 0;
-  /* Remove padding to mimic Windows file manager */
   border: 2px solid #808080;
-  /* Adjust border color */
   border-radius: 5px;
   display: flex;
   flex-direction: column;
