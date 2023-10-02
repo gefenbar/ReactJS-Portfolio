@@ -23,7 +23,7 @@ export default function DarkModeButton() {
     // Save the user's preference in localStorage
     localStorage.setItem('darkMode', newMode.toString());
     // Update the class of the body element
-    document.body.className = newMode ? 'dark-mode' : 'light-mode';
+    document.body.className = newMode ? 'light-mode' : 'dark-mode';
     // document.getElementById('x').className = newMode ? 'dark-mode' : 'light-mode';
 
   };
@@ -34,7 +34,7 @@ export default function DarkModeButton() {
       <div className="light-bulb">
         <img src="bulb.webp" alt={isDarkMode ? 'Dark Mode' : 'Light Mode'} className={isDarkMode ? 'lit' : 'unlit'} />
       </div>
-      <div className="dark-mode-text">{isDarkMode ? 'Dark' : 'Light'}</div>
+      <div className="dark-mode-text">{isDarkMode ? 'Light' : 'Dark'}</div>
     </button>
   );
 }

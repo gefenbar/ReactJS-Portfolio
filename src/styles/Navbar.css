@@ -13,7 +13,28 @@
     padding: 10px 0;
 }
 
+.dark-mode #nav {
+    background-color: black;
+}
 
+.dark-mode #nav ul li a.menu_item {
+    color: white;
+}
+
+.dark-mode-text {
+    font-size: 15px;
+    /* font-weight: 900; */
+    color: black;
+    text-transform: capitalize;
+}
+
+.dark-mode .dark-mode-text {
+    color: white;
+}
+
+.dark-mode .datetime {
+    color: white;
+}
 
 .small-menu-button {
     display: none;
@@ -126,6 +147,7 @@
 
 }
 
+
 @media(hover:hover) {
 
     #nav ul li:hover a.menu_item {
@@ -202,11 +224,6 @@
         padding: 0;
     }
 
-    /* 
-    #nav {
-        background-color: #000000bb !important;
-
-    } */
 
     #nav ul li a.menu_item {
         margin: 10px;

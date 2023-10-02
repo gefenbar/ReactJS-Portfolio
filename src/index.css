@@ -12,7 +12,13 @@
   background: url('/flare-light.webp');
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+body.dark-mode {
+  background: url('/flare-dark.webp');
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {

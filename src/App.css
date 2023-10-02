@@ -14,28 +14,6 @@ body {
   /* min-height: 100vh !important; */
 }
 
-/* :root {
-  --color-background-light: #ffffff;
-  --color-text-light: #000000;
-
-  --color-background-dark: #000000;
-  --color-text-dark: #ffffff;
-} */
-
-/* 
-#light {
-  background-color: white; */
-/* background: url('/windows-abstract.webp'); */
-/* color: var(--color-text-light); */
-/* } */
-
-/* #dark { */
-/* background-color: black; */
-/* background: url('/dark-sand.jpg'); */
-/* color: var(--color-text-dark); */
-/* } */
-
-
 button:focus,
 button:active {
   outline: none;
@@ -147,7 +125,10 @@ textarea {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+}
 
+.dark-mode .page-container {
+  background-color: #bbb;
 }
 
 
