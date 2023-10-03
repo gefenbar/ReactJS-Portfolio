@@ -9,13 +9,12 @@
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    background-color: transparent;
+    /* background-color: transparent; */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
 }
-
 
 
 
@@ -31,19 +30,42 @@
     color: red;
 }
 
-.rotate {
-    animation: rotate 25s linear infinite;
+.animation {
+    animation: x 15s infinite;
+    position: relative;
+    display: inline-block;
+    perspective: 500px;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
+@keyframes x {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
     }
 
-    to {
-        transform: rotate(360deg);
+    20% {
+        transform: scale(0.7) rotate(-45deg);
+        opacity: 0.8;
+    }
+
+    40% {
+        transform: scale(0.5) rotate(45deg);
+        opacity: 0.6;
+    }
+
+    60% {
+        transform: scale(0.7) rotate(-20deg);
+        opacity: 0.8;
+    }
+
+    80% {
+        transform: scale(0.9) rotate(20deg);
+        opacity: 0.8;
     }
 }
+
 
 .container-circle {
     position: relative;
@@ -72,11 +94,7 @@
     transition: transform 0.3s ease;
 }
 
-.container-circle h3 {
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    color: #000;
-}
+
 
 /* Animation keyframes */
 @keyframes fadeIn {

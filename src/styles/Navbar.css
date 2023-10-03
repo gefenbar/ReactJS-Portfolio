@@ -112,7 +112,7 @@
 }
 
 .unlit {
-    opacity: 1;
+    /* opacity: 1; */
     filter: invert(0.3);
 }
 
@@ -203,7 +203,11 @@
         text-align: center;
         cursor: pointer;
         font-size: 24px;
-        color: #ffffff;
+        color: black;
+    }
+
+    .dark-mode .mobile-menu .small-menu-button {
+        color: white;
     }
 
     .small-menu-button img {

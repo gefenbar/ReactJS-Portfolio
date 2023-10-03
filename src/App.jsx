@@ -1,14 +1,16 @@
-import { React, useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Experience from './pages/Experience';
-import Skills from './pages/Skills';
-import Icons from './Components/Icons';
 import { AnimatePresence } from 'framer-motion';
+
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Experience = lazy(() => import('./pages/Experience'));
+const Skills = lazy(() => import('./pages/Skills'));
+const Icons = lazy(() => import('./Components/Icons'));
+
 const UnderConstruction = () => {
   return (
     <div className="under-construction">
@@ -22,10 +24,7 @@ const UnderConstruction = () => {
   );
 };
 
-
-
-export default function App() {
-
+function App() {
   return (
     <div className="app">
       {/* <UnderConstruction /> */}
@@ -36,17 +35,19 @@ export default function App() {
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
+            <Route path="/experience" element={<Suspense fallback={<div>Loading...</div>}><Experience /></Suspense>} />
+            <Route path="/projects" element={<Suspense fallback={<div>Loading...</div>}><Projects /></Suspense>} />
+            <Route path="/skills" element={<Suspense fallback={<div>Loading...</div>}><Skills /></Suspense>} />
+            <Route path="/contact" element={<Suspense fallback={<div>Loading...</div>}><Contact /></Suspense>} />
           </Routes>
         </AnimatePresence>
       </BrowserRouter>
-      <Icons />
-
-    </div >
-
+      <Suspense fallback={<div>Loading...</div>}>
+        <Icons />
+      </Suspense>
+    </div>
   );
 }
+
+export default App;

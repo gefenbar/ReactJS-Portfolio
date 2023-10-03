@@ -44,7 +44,7 @@ export default function Skills() {
                                         alt={skill.name}
                                         width={100}
                                         height={150}
-                                        className="rotate"
+                                        className="animation"
                                     />
                                 </div>
                             </div>

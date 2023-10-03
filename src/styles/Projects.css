@@ -10,7 +10,7 @@
 }
 
 .folder-card {
-    width: 200px;
+    width: 120px;
     /* overflow: hidden; */
     border-radius: 12px;
     transition: transform 0.3s ease;
