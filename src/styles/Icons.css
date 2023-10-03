@@ -76,7 +76,7 @@
 
 
 .icon-title {
-    color: white;
+    color: black;
     position: relative;
     bottom: -55px;
     display: flex;
@@ -85,7 +85,10 @@
     align-items: center;
     /* Center vertically */
     font-weight: 500;
+}
 
+.dark-mode .icon-title {
+    color: white;
 }
 
 @media(hover:hover) {

@@ -53,10 +53,10 @@ export default function Skills() {
                 ) : (
                     <div className="play-button-container">
                         <button className="play-button" onClick={handleButtonClick}>
-                            {/* Add your play button icon here */}
-                            <div className="play-icon">&#9654;</div>
+                            <img src="play-button.webp" alt="Play" className="play-icon" />
                         </button>
                     </div>
+
                 )}
             </div>
         </PageEffect>
