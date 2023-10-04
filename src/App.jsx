@@ -4,8 +4,6 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import { AnimatePresence } from 'framer-motion';
 
-// Import the CSS loader component
-
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Contact = lazy(() => import('./pages/Contact'));
