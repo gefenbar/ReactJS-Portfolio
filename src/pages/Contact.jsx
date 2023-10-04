@@ -9,17 +9,17 @@ export default function Contact() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-
     const handleEmailLinkClick = (e) => {
         e.preventDefault();
         const { name, email, message } = formData;
 
-        // Create a mailto URL with pre-filled fields
-        const mailtoURL = `mailto:${encodeURIComponent('gefenbar23@gmail.com')}?subject=${encodeURIComponent(`Message from ${name}`)}&body=${encodeURIComponent(message)}`;
+        // Create a link to Gmail with pre-filled fields
+        const gmailURL = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent('gefenbar23@gmail.com')}&su=${encodeURIComponent(`Message from ${name}: ${email}`)}&body=${encodeURIComponent(message)}&fs=1&tf=1&from=${encodeURIComponent(email)}`;
 
-        // Open the user's default email client
-        window.location.href = mailtoURL;
+        // Open Gmail in a new window or tab
+        window.open(gmailURL, '_blank');
     };
+
 
     return (
         <PageEffect>
