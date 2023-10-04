@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import { AnimatePresence } from 'framer-motion';
 
+// Import the CSS loader component
+
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -17,9 +19,18 @@ const UnderConstruction = () => {
       <h1>Under Construction</h1>
       <p>This website is currently under construction.</p>
       <p>Please check the progress on GitHub:</p>
-      <a href="https://github.com/gefenbar/"  >
+      <a href="https://github.com/gefenbar/">
         View on GitHub
       </a>
+    </div>
+  );
+};
+
+// Create a CSS loader component
+const Loader = () => {
+  return (
+    <div className="loader-container">
+      <div className="loader"></div>
     </div>
   );
 };
@@ -35,15 +46,15 @@ function App() {
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
-            <Route path="/experience" element={<Suspense fallback={<div>Loading...</div>}><Experience /></Suspense>} />
-            <Route path="/projects" element={<Suspense fallback={<div>Loading...</div>}><Projects /></Suspense>} />
-            <Route path="/skills" element={<Suspense fallback={<div>Loading...</div>}><Skills /></Suspense>} />
-            <Route path="/contact" element={<Suspense fallback={<div>Loading...</div>}><Contact /></Suspense>} />
+            <Route path="/" element={<Suspense fallback={<Loader />}><Home /></Suspense>} />
+            <Route path="/experience" element={<Suspense fallback={<Loader />}><Experience /></Suspense>} />
+            <Route path="/projects" element={<Suspense fallback={<Loader />}><Projects /></Suspense>} />
+            <Route path="/skills" element={<Suspense fallback={<Loader />}><Skills /></Suspense>} />
+            <Route path="/contact" element={<Suspense fallback={<Loader />}><Contact /></Suspense>} />
           </Routes>
         </AnimatePresence>
       </BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Icons />
       </Suspense>
     </div>
