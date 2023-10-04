@@ -15,7 +15,7 @@ export default function Contact() {
         const { name, email, message } = formData;
 
         // Create a mailto URL with pre-filled fields
-        const mailtoURL = `mailto:${encodeURIComponent('recipient@example.com')}?subject=${encodeURIComponent(`Message from ${name}`)}&body=${encodeURIComponent(message)}`;
+        const mailtoURL = `mailto:${encodeURIComponent('gefenbar23@gmail.com')}?subject=${encodeURIComponent(`Message from ${name}`)}&body=${encodeURIComponent(message)}`;
 
         // Open the user's default email client
         window.location.href = mailtoURL;
