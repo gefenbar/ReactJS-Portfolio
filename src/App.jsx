@@ -14,7 +14,7 @@ const Icons = lazy(() => import('./Components/Icons'));
 const UnderConstruction = () => {
   return (
     <div className="under-construction">
-      <h1>Under Construction</h1>
+      <h1>Under<br></br> Construction</h1>
       <p>This website is currently under construction.</p>
       <p>Please check the progress on GitHub:</p>
       <a href="https://github.com/gefenbar/">
